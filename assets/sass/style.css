@@ -141,6 +141,11 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   font-family: "address-sans-pro-condensed", sans-serif;
 }
 
+.thin {
+  font-family: "address-sans-pro-condensed", sans-serif;
+  font-weight: 400;
+}
+
 /* Variables */
 :root {
   /* Font Family */
