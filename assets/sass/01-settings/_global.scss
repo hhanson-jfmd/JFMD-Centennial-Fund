@@ -97,7 +97,22 @@ $baseline-unit: 10px;
   --global--color-border: var(
     --global--color-primary
   ); /* Used for borders (separators) */
-
+  .dark-gradient {
+    background: rgb(134, 202, 211);
+    background: linear-gradient(
+      175deg,
+      rgba(134, 202, 211, 1) 0%,
+      rgba(133, 145, 199, 1) 100%
+    );
+  }
+  .light-gradient {
+    background: rgb(206, 234, 237);
+    background: linear-gradient(
+      175deg,
+      rgba(206, 234, 237, 1) 28%,
+      rgba(206, 211, 233, 1) 100%
+    );
+  }
   /* Spacing */
   --global--spacing-unit: #{2 * $baseline-unit}; // 20px
   --global--spacing-measure: unset; // Use ch units here. ie: 60ch = 60 character max-width
