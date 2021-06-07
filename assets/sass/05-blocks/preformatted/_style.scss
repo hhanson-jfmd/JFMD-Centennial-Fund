@@ -10,8 +10,7 @@ pre.wp-block-preformatted {
     grid-template-rows: auto 8rem auto auto;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 15px;
-    max-width: var(--responsive--alignwide-width);
-
+    width: var(--responsive--alignwide-width);
     &--two-blocks {
       grid-column: 4 / span 2;
       grid-row: 1;

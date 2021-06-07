@@ -2859,7 +2859,7 @@ pre.wp-block-preformatted {
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
   grid-gap: 15px;
-  max-width: var(--responsive--alignwide-width);
+  width: var(--responsive--alignwide-width);
 }
 
 .front-page--splash--two-blocks {
