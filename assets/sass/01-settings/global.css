@@ -1,12 +1,8 @@
 /* Variables */
 :root {
   /* Font Family */
-  --global--font-primary: var(
-    --font-headings,
-    "address-sans-pro-condensed",
-    sans-serif
-  );
-  --global--font-secondary: var(--font-base, "axia", sans-serif);
+  --global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+  --global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
   /* Font Size */
   --global--font-size-base: 1.25rem;
   --global--font-size-xs: 1rem;
@@ -64,27 +60,16 @@
   --global--color-orange: #e4dad1;
   --global--color-yellow: #eeeadd;
   --global--color-white: #fff;
-  --global--color-white-50: rgba(
-    255,
-    255,
-    255,
-    0.5
-  );
+  --global--color-white-50: rgba(255, 255, 255, 0.5);
   --global--color-white-90: rgba(255, 255, 255, 0.9);
-  --global--color-primary: var(
-    --global--color-dark-gray
-  );
+  --global--color-primary: var(--global--color-dark-gray);
   /* Body text color, site title, footer text color. */
   --global--color-secondary: var(--global--color-gray);
   /* Headings */
   --global--color-primary-hover: var(--global--color-primary);
-  --global--color-background: var(
-    --global--color-green
-  );
+  --global--color-background: var(--global--color-green);
   /* Mint, default body background */
-  --global--color-border: var(
-    --global--color-primary
-  );
+  --global--color-border: var(--global--color-primary);
   /* Used for borders (separators) */
   /* Spacing */
   --global--spacing-unit: 20px;
@@ -97,9 +82,7 @@
   --form--font-family: var(--global--font-secondary);
   --form--font-size: var(--global--font-size-sm);
   --form--line-height: var(--global--line-height-body);
-  --form--color-text: var(
-    --global--color-dark-gray
-  );
+  --form--color-text: var(--global--color-dark-gray);
   --form--color-ranged: var(--global--color-secondary);
   --form--label-weight: 500;
   --form--border-color: var(--global--color-secondary);
@@ -212,16 +195,6 @@
   --widget--spacing-menu: calc(0.66 * var(--global--spacing-unit));
   /* Admin-bar height */
   --global--admin-bar--height: 0px;
-}
-
-:root .dark-gradient {
-  background: #86cad3;
-  background: linear-gradient(175deg, #86cad3 0%, #8591c7 100%);
-}
-
-:root .light-gradient {
-  background: #ceeaed;
-  background: linear-gradient(175deg, #ceeaed 28%, #ced3e9 100%);
 }
 
 .admin-bar {

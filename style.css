@@ -93,15 +93,59 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
  * Measure..............The width of a line of text, in characters.
  */
 /* Categories 01 to 03 are the basics. */
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * address-sans-pro-condensed:
+ *   - http://typekit.com/eulas/00000000000000007735cc2c
+ *   - http://typekit.com/eulas/00000000000000007735cc3c
+ * axia:
+ *   - http://typekit.com/eulas/00000000000000003b9ae357
+ *
+ * © 2009-2021 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-06-04 19:31:08 UTC"}*/
+@import url("https://p.typekit.net/p.css?s=1&k=kmw8dum&ht=tk&f=29968.43262.43266&a=15564535&app=typekit&e=css");
+@font-face {
+  font-family: "axia";
+  src: url("https://use.typekit.net/af/70eb31/00000000000000003b9ae357/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/70eb31/00000000000000003b9ae357/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/70eb31/00000000000000003b9ae357/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "address-sans-pro-condensed";
+  src: url("https://use.typekit.net/af/cc510e/00000000000000007735cc2c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/cc510e/00000000000000007735cc2c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/cc510e/00000000000000007735cc2c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "address-sans-pro-condensed";
+  src: url("https://use.typekit.net/af/a83469/00000000000000007735cc3c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/a83469/00000000000000007735cc3c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/a83469/00000000000000007735cc3c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.tk-axia {
+  font-family: "axia", sans-serif;
+}
+
+.tk-address-sans-pro-condensed {
+  font-family: "address-sans-pro-condensed", sans-serif;
+}
+
 /* Variables */
 :root {
   /* Font Family */
-  --global--font-primary: var(
-    --font-headings,
-    "address-sans-pro-condensed",
-    sans-serif
-  );
-  --global--font-secondary: var(--font-base, "axia", sans-serif);
+  --global--font-primary: "address-sans-pro-condensed", sans-serif;
+  --global--font-secondary: "axia", sans-serif;
   /* Font Size */
   --global--font-size-base: 1.25rem;
   --global--font-size-xs: 1rem;
@@ -307,16 +351,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --widget--spacing-menu: calc(0.66 * var(--global--spacing-unit));
   /* Admin-bar height */
   --global--admin-bar--height: 0px;
-}
-
-:root .dark-gradient {
-  background: #86cad3;
-  background: linear-gradient(175deg, #86cad3 0%, #8591c7 100%);
-}
-
-:root .light-gradient {
-  background: #ceeaed;
-  background: linear-gradient(175deg, #ceeaed 28%, #ced3e9 100%);
 }
 
 .admin-bar {
