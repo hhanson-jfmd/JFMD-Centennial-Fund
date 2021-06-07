@@ -727,9 +727,15 @@ template {
  * Root Media Query Variables
  */
 :root {
-  --responsive--spacing-horizontal: calc(2 * var(--global--spacing-horizontal) * 0.6);
-  --responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));
-  --responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));
+  --responsive--spacing-horizontal: calc(
+    2 * var(--global--spacing-horizontal) * 0.6
+  );
+  --responsive--aligndefault-width: calc(
+    100vw - var(--responsive--spacing-horizontal)
+  );
+  --responsive--alignwide-width: calc(
+    100vw - var(--responsive--spacing-horizontal)
+  );
   --responsive--alignfull-width: 100%;
   --responsive--alignright-margin: var(--global--spacing-horizontal);
   --responsive--alignleft-margin: var(--global--spacing-horizontal);
@@ -737,17 +743,32 @@ template {
 
 @media only screen and (min-width: 482px) {
   :root {
-    --responsive--aligndefault-width: min(calc(100vw - 4 * var(--global--spacing-horizontal)), 610px);
-    --responsive--alignwide-width: calc(100vw - 4 * var(--global--spacing-horizontal));
-    --responsive--alignright-margin: calc(0.5 * (100vw - var(--responsive--aligndefault-width)));
-    --responsive--alignleft-margin: calc(0.5 * (100vw - var(--responsive--aligndefault-width)));
+    --responsive--aligndefault-width: min(
+      calc(100vw - 4 * var(--global--spacing-horizontal)),
+      610px
+    );
+    --responsive--alignwide-width: calc(
+      100vw - 4 * var(--global--spacing-horizontal)
+    );
+    --responsive--alignright-margin: calc(
+      0.5 * (100vw - var(--responsive--aligndefault-width))
+    );
+    --responsive--alignleft-margin: calc(
+      0.5 * (100vw - var(--responsive--aligndefault-width))
+    );
   }
 }
 
 @media only screen and (min-width: 822px) {
   :root {
-    --responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 610px);
-    --responsive--alignwide-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 1240px);
+    --responsive--aligndefault-width: min(
+      calc(100vw - 8 * var(--global--spacing-horizontal)),
+      610px
+    );
+    --responsive--alignwide-width: min(
+      calc(100vw - 8 * var(--global--spacing-horizontal)),
+      1240px
+    );
   }
 }
 
@@ -761,7 +782,7 @@ template {
   margin-right: auto;
 }
 
-.wide-max-width, .alignwide, .site-header, .site-footer, .post-navigation, .pagination,
+.default-max-width, .wide-max-width, .alignwide, .site-header, .site-footer, .post-navigation, .pagination,
 .comments-pagination, .widget-area {
   max-width: var(--responsive--alignwide-width);
   margin-left: auto;
