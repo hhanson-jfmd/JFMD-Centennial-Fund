@@ -224,7 +224,7 @@ $breakpoint_xxl: 1024px;
 
 // Output
 .default-max-width {
-  @var (--responsive--alignwide-width);
+  max-width: var(--responsive--alignwide-width);
 }
 
 .wide-max-width {
