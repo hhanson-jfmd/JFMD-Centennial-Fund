@@ -362,6 +362,16 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--admin-bar--height: 0px;
 }
 
+:root .dark-gradient {
+  background: #86cad3;
+  background: linear-gradient(175deg, #86cad3 0%, #8591c7 100%);
+}
+
+:root .light-gradient {
+  background: #ceeaed;
+  background: linear-gradient(175deg, #ceeaed 28%, #ced3e9 100%);
+}
+
 .admin-bar {
   --global--admin-bar--height: 32px;
 }
