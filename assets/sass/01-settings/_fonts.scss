@@ -1,4 +1,4 @@
-@charset "UTF-8";
+// Do we need to serve a font? Add the @font-face styles here.
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
  * is provided by Adobe and is subject to these Terms of Use
@@ -14,7 +14,9 @@
  * © 2009-2021 Adobe Systems Incorporated. All Rights Reserved.
  */
 /*{"last_published":"2021-06-04 19:31:08 UTC"}*/
+
 @import url("https://p.typekit.net/p.css?s=1&k=kmw8dum&ht=tk&f=29968.43262.43266&a=15564535&app=typekit&e=css");
+
 @font-face {
   font-family: "axia";
   src: url("https://use.typekit.net/af/70eb31/00000000000000003b9ae357/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
@@ -57,8 +59,6 @@
 .tk-axia {
   font-family: "axia", sans-serif;
 }
-
 .tk-address-sans-pro-condensed {
   font-family: "address-sans-pro-condensed", sans-serif;
 }
-/*# sourceMappingURL=fonts.css.map */
