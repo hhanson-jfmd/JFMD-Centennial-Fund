@@ -356,7 +356,7 @@
 }
 
 .default-max-width {
-  max-width: var(--responsive--alignwide-width);
+  max-width: var(--responsive--alignwide-width) !important;
 }
 
 blockquote {
