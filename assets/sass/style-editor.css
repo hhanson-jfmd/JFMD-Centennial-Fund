@@ -340,7 +340,7 @@
 /**
  * Extends
  */
-.wide-max-width {
+.default-max-width, .wide-max-width {
   max-width: var(--responsive--alignwide-width);
   margin-left: auto;
   margin-right: auto;
@@ -353,10 +353,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.default-max-width {
-  max-width: var(--responsive--alignwide-width) !important;
 }
 
 blockquote {
