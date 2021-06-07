@@ -782,7 +782,7 @@ template {
   margin-right: auto;
 }
 
-.default-max-width, .wide-max-width, .alignwide, .site-header, .site-footer, .post-navigation, .pagination,
+.wide-max-width, .alignwide, .site-header, .site-footer, .post-navigation, .pagination,
 .comments-pagination, .widget-area {
   max-width: var(--responsive--alignwide-width);
   margin-left: auto;
@@ -829,6 +829,10 @@ template {
     /*rtl:ignore*/
     margin-right: var(--responsive--alignright-margin);
   }
+}
+
+.default-max-width {
+  @var (--responsive--alignwide-width);
 }
 
 /**
