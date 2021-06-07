@@ -546,10 +546,23 @@ require get_template_directory() . '/inc/block-patterns.php';
 // Block Styles.
 require get_template_directory() . '/inc/block-styles.php';
 
-// Dark Mode.
-require_once get_template_directory() . '/classes/class-twenty-twenty-one-dark-mode.php';
-new Twenty_Twenty_One_Dark_Mode();
-
+	
+	/**
+	 * ACF Custom Block functions - JFMD.
+	 */
+	require get_template_directory() . '/inc/acf-blocks.php';
+	
+	// Dark Mode.
+	require_once get_template_directory() . '/classes/class-twenty-twenty-one-dark-mode.php';
+	new Twenty_Twenty_One_Dark_Mode();
+	
+	/**
+	* Removes width and height attributes from image tags
+	*
+	* @param string $html
+	*
+	* @return string
+	*/
 /**
  * Enqueue scripts for the customizer preview.
  *
@@ -627,3 +640,23 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+add_action( 'wp_enqueue_scripts', function() {
+	$styles = wp_styles();
+	$styles->add_data( 'twenty-twenty-one-style', 'after', array() );
+}, 20 ); 
+
+add_filter('single_template', 'check_for_category_single_template');
+function check_for_category_single_template( $t )
+{
+  foreach( (array) get_the_category() as $cat ) 
+  { 
+	if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php"; 
+	if($cat->parent)
+	{
+	  $cat = get_the_category_by_ID( $cat->parent );
+	  if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
+	}
+  } 
+  return $t;
+}?>
