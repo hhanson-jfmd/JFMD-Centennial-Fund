@@ -2878,9 +2878,9 @@ pre.wp-block-preformatted {
 }
 
 .front-page--splash--centennial-logo {
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 3;
-  grid-column: 8 / span 3;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-column: 6 / span 5;
   -ms-grid-row: 1;
   grid-row: 1;
 }
@@ -2893,6 +2893,10 @@ pre.wp-block-preformatted {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .front-page--splash--centennial-logo .wp-group__inner-container figure {
