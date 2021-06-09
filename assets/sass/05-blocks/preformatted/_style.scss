@@ -35,27 +35,31 @@ pre.wp-block-preformatted {
           img{height:100%; width:100%;}
         }
         &:first-child{margin:0 15px 0 0;}
+        .logo{z-index:2;}
       }
     }
     &--blue-block{
       grid-column: 3 / span 2;
       grid-row:1;
+      margin:0;
     }
     &--headings {
       grid-column: 1/-1;
       display:grid;
       grid-gap: 10px;
       grid-template-columns: repeat(12, 1fr);
-      background-color: rgba(255,255,255,.4);
+      background-color: rgba(255,255,255,.8);
       grid-row:2/span 2;
+      
     }
     &--titles{
       grid-column: 5 / span 7;
       grid-row: 1;
       display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content: start;
+      flex-direction:column;
+      align-self:center;
+      justify-content: start;
+      height:min-content;
       .wp-block-group__inner-container{
         
         .intro{
