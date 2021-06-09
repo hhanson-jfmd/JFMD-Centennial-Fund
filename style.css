@@ -2904,6 +2904,8 @@ pre.wp-block-preformatted {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2 / span 2;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
   background-color: rgba(255, 255, 255, 0.4);
