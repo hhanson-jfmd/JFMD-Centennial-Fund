@@ -2931,7 +2931,7 @@ pre.wp-block-preformatted {
   grid-column: 1/-1;
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px 0px;
+  grid-gap: 10px;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   background-color: rgba(255, 255, 255, 0.8);
@@ -2963,6 +2963,7 @@ pre.wp-block-preformatted {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+  margin-left: 1rem;
 }
 
 .front-page--splash--titles .wp-block-group__inner-container {
