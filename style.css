@@ -2885,7 +2885,7 @@ pre.wp-block-preformatted {
   grid-row: 1;
 }
 
-.front-page--splash--centennial-logo .wp-group__inner-container {
+.front-page--splash--centennial-logo .wp-block-group__inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2899,18 +2899,18 @@ pre.wp-block-preformatted {
           flex-direction: row;
 }
 
-.front-page--splash--centennial-logo .wp-group__inner-container figure {
+.front-page--splash--centennial-logo .wp-block-group__inner-container figure {
   height: 20vw;
   width: auto;
   margin: 0;
 }
 
-.front-page--splash--centennial-logo .wp-group__inner-container figure img {
+.front-page--splash--centennial-logo .wp-block-group__inner-container figure img {
   height: 100%;
   width: 100%;
 }
 
-.front-page--splash--centennial-logo .wp-group__inner-container:first-child {
+.front-page--splash--centennial-logo .wp-block-group__inner-container:first-child {
   margin: 0 15px 0 0;
 }
 
