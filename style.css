@@ -2856,7 +2856,6 @@ pre.wp-block-preformatted {
 }
 
 .front-page--splash {
-  max-width: var(--responsive--alignwide-width);
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 8rem auto auto;
@@ -2900,9 +2899,13 @@ pre.wp-block-preformatted {
   grid-column: 1/-1;
   display: -ms-grid;
   display: grid;
+  grid-gap: 15px;
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
   background-color: rgba(255, 255, 255, 0.4);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/span 2;
 }
 
 .front-page--splash--titles {
@@ -2914,7 +2917,7 @@ pre.wp-block-preformatted {
   grid-row: 2 / span 2;
 }
 
-.front-page--splash--branding {
+.front-page--splash--titles--branding {
   -ms-grid-column: 3;
   -ms-grid-column-span: 6;
   grid-column: 3 / span 6;
