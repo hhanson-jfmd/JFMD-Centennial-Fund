@@ -11,7 +11,7 @@ pre.wp-block-preformatted {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 10px;
+    grid-gap: 10px 0px;
     &--two-blocks {
       grid-column: 6 / span 2;
       grid-row: 1;
@@ -46,7 +46,7 @@ pre.wp-block-preformatted {
     &--headings {
       grid-column: 1/-1;
       display:grid;
-      grid-gap: 10px;
+      grid-gap: 10px 0px;
       grid-template-columns: repeat(12, 1fr);
       background-color: rgba(255,255,255,.8);
       grid-row:2/span 2;
