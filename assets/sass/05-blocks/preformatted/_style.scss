@@ -37,6 +37,9 @@ pre.wp-block-preformatted {
         &:first-child{margin:0 15px 0 0;}
       }
     }
+    &--blue-block{
+      grid-column: 3 / span 2;
+    }
     &--headings {
       grid-column: 1/-1;
       display:grid;
