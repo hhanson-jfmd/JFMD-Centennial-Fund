@@ -13,7 +13,6 @@ pre.wp-block-preformatted {
     grid-template-rows: auto 8rem auto auto;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 15px;
-    width: var(--responsive--alignwide-width) !important;
     &--two-blocks {
       grid-column: 4 / span 2;
       grid-row: 1;
@@ -30,11 +29,14 @@ pre.wp-block-preformatted {
       grid-row: 2 / span 2;
     }
     &--headings {
-      grid-column: 3 / span 6;
-      grid-row: 2 / span 2;
+      grid-column: 1/-1;
       display:grid;
       grid-template-columns: repeat(8, 1fr);
       background-color: rgba(255,255,255,.4);
+    }
+    &--titles{
+      grid-column: 3 / span 6;
+      grid-row: 2 / span 2;
     }
     &--branding {
       grid-column: 3 / span 6;
