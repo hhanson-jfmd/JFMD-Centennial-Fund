@@ -10,7 +10,7 @@ pre.wp-block-preformatted {
   &--splash {
     display: grid;
     grid-template-rows: auto 12rem auto auto;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
     &--two-blocks {
       grid-column: 6 / span 2;
@@ -51,7 +51,7 @@ pre.wp-block-preformatted {
       }
   } 
   &--branding {
-    grid-column: 3 / span 6;
+    grid-column: 5 / span 6;
     grid-row: end;
   }
 }

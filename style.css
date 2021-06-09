@@ -2860,8 +2860,8 @@ pre.wp-block-preformatted {
   display: grid;
   -ms-grid-rows: auto 12rem auto auto;
       grid-template-rows: auto 12rem auto auto;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
 }
 
@@ -2918,9 +2918,9 @@ pre.wp-block-preformatted {
 }
 
 .front-page--splash--branding {
-  -ms-grid-column: 3;
+  -ms-grid-column: 5;
   -ms-grid-column-span: 6;
-  grid-column: 3 / span 6;
+  grid-column: 5 / span 6;
   grid-row: end;
 }
 
