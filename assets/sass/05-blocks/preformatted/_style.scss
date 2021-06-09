@@ -36,7 +36,7 @@ pre.wp-block-preformatted {
       grid-row:2/span 2;
     }
     &--titles{
-      grid-column: 5 / span 6;
+      grid-column: 5 / span 7;
       grid-row: 2 / span 2;
       .wp-block-group__inner-container{
         .intro{
@@ -49,8 +49,6 @@ pre.wp-block-preformatted {
   
         }
       }
-
-    
   } 
   &--branding {
     grid-column: 3 / span 6;
