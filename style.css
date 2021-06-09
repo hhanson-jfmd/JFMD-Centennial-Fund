@@ -2981,6 +2981,8 @@ pre.wp-block-preformatted {
 .front-page--splash--titles .wp-block-group__inner-container .main-title {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 5.4rem;
+  spacing: -0.315rem;
 }
 
 .front-page--splash--titles .wp-block-group__inner-container .subhead {
