@@ -2851,8 +2851,8 @@ pre.wp-block-preformatted {
 }
 
 #front-page--splash {
-  max-width: var(--responsive--alignwide-width);
-  width: var(--responsive--alignwide-width);
+  max-width: 100%;
+  width: 100%;
 }
 
 .front-page--splash {
