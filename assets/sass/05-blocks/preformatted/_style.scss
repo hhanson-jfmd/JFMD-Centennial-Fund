@@ -61,7 +61,8 @@ pre.wp-block-preformatted {
       justify-content: start;
       height:min-content;
       .wp-block-group__inner-container{
-        
+        margin:0;
+        align-self:start;
         .intro{
         margin-top:0;
         margin-bottom:0;

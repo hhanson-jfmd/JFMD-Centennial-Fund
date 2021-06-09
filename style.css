@@ -2963,6 +2963,13 @@ pre.wp-block-preformatted {
   height: min-content;
 }
 
+.front-page--splash--titles .wp-block-group__inner-container {
+  margin: 0;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
 .front-page--splash--titles .wp-block-group__inner-container .intro {
   margin-top: 0;
   margin-bottom: 0;
