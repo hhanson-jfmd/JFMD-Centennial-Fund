@@ -72,7 +72,7 @@ pre.wp-block-preformatted {
         .intro{
         margin-top:0;
         margin-bottom:0;
-        font-size:5.4rem;
+        font-size:clamp(1rem, 3vw, 3rem);
         font-weight:300;
         color:#8E8E8E;
         }
@@ -87,7 +87,7 @@ pre.wp-block-preformatted {
         .subhead{
           margin-top:0;
           margin-bottom:0;
-          font-size:5.4rem;
+          font-size:clamp(1.7rem, 4vw, 4rem);
           font-weight:300;
           color:#8E8E8E;
         }
