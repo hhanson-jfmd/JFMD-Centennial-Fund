@@ -2977,6 +2977,9 @@ pre.wp-block-preformatted {
 .front-page--splash--titles .wp-block-group__inner-container .intro {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 5.4rem;
+  font-weight: 300;
+  color: #8E8E8E;
 }
 
 .front-page--splash--titles .wp-block-group__inner-container .main-title {
@@ -2985,11 +2988,15 @@ pre.wp-block-preformatted {
   font-size: 5.4rem;
   letter-spacing: -0.315rem;
   line-height: .85;
+  font-size: clamp(2rem, 4.8vw, 6rem);
 }
 
 .front-page--splash--titles .wp-block-group__inner-container .subhead {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 5.4rem;
+  font-weight: 300;
+  color: #8E8E8E;
 }
 
 .front-page--splash--branding {
