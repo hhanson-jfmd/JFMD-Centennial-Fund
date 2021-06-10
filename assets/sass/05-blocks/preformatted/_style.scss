@@ -32,11 +32,11 @@ pre.wp-block-preformatted {
         margin:0;
         figure.wp-block-image.size-large{
           margin:0 !important;
-          &:first-child{margin:0 15px 0 0;}
           .logo{z-index:2;}
             height:20vw;
             width:auto;
             margin:0;
+            padding-left:15px;
           img{height:100%; width:100%;}
         }
         
