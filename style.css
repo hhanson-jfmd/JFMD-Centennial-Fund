@@ -2860,9 +2860,16 @@ pre.wp-block-preformatted {
   display: grid;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: 0px 0px (1fr)[12] 0px 0px;
+      grid-template-columns: 0px 0px repeat(12, 1fr) 0px 0px;
   grid-gap: 10px 0px;
+}
+
+@media only screen and (min-width: 822px) {
+  .front-page--splash {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+  }
 }
 
 .front-page--splash--two-blocks {
@@ -2986,9 +2993,9 @@ pre.wp-block-preformatted {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 5.4rem;
-  letter-spacing: calc(var($title-size) * 0.12);
+  letter-spacing: 0.12rem;
   line-height: 0.85;
-  font-size: var(clamp(2rem, 4.8vw, 6rem));
+  font-size: clamp(2rem, 4.8vw, 6rem);
 }
 
 .front-page--splash--titles .wp-block-group__inner-container .subhead {

@@ -3,8 +3,6 @@ pre.wp-block-preformatted {
   white-space: pre;
 }
 
-$title-size: clamp(2rem, 4.8vw, 6rem);
-
 #front-page--splash {
   max-width: 100%;
   width: 100% !important; //I don't like this, but can't figure out how to make it better yet
@@ -13,8 +11,11 @@ $title-size: clamp(2rem, 4.8vw, 6rem);
   &--splash {
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 0px 0px repeat(12, 1fr) 0px 0px;
     grid-gap: 10px 0px;
+    @include media(desktop) {
+      grid-template-columns: repeat(12, 1fr);
+    }
     &--two-blocks {
       grid-column: 6 / span 2;
       grid-row: 1;
@@ -87,9 +88,9 @@ $title-size: clamp(2rem, 4.8vw, 6rem);
           margin-top: 0;
           margin-bottom: 0;
           font-size: 5.4rem;
-          letter-spacing: calc(var($title-size) * 0.12);
+          letter-spacing: 0.12rem;
           line-height: 0.85;
-          font-size: var($title-size);
+          font-size: clamp(2rem, 4.8vw, 6rem);
         }
         .subhead {
           margin-top: 0;
