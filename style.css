@@ -3066,6 +3066,11 @@ pre.wp-block-preformatted {
   grid-row: 1;
 }
 
+.intro--headline .wp-block-group__inner-container h2 {
+  line-height: 1;
+  font-weight: 700;
+}
+
 .intro--copy {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
@@ -3074,12 +3079,24 @@ pre.wp-block-preformatted {
   grid-row: 2;
 }
 
+.intro--copy .wp-block-group__inner-container p {
+  line-height: 1.3;
+}
+
 .intro--quote {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-column: 4 / span 3;
   -ms-grid-row: 3;
   grid-row: 3;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.intro--quote .wp-block-group__inner-container h3 {
+  ine-height: 1;
+  font-weight: 700;
 }
 
 .intro--img {
