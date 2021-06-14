@@ -28,7 +28,7 @@ pre.wp-block-preformatted {
       grid-row: 1;
       margin: 0;
       @include media(tablet) {
-        grid-column: 6 / span 5;
+        grid-column: 5 / span 6;
       }
 
       .wp-block-group__inner-container {

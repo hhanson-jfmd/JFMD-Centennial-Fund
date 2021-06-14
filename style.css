@@ -2889,9 +2889,9 @@ pre.wp-block-preformatted {
 
 @media only screen and (min-width: 592px) {
   .front-page--splash--centennial-logo {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 5;
-    grid-column: 6 / span 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 6;
+    grid-column: 5 / span 6;
   }
 }
 
