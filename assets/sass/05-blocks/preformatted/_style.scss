@@ -58,6 +58,10 @@ pre.wp-block-preformatted {
       margin: 0;
       height: 100%;
       width: auto;
+      figure img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
     &--headings {
       grid-column: 1/-1;

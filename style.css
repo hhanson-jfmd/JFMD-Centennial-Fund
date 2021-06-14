@@ -2937,6 +2937,12 @@ pre.wp-block-preformatted {
   width: auto;
 }
 
+.front-page--splash--blue-block figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .front-page--splash--headings {
   grid-column: 1/-1;
   display: -ms-grid;
