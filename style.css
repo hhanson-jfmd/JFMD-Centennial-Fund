@@ -3179,6 +3179,10 @@ pre.wp-block-preformatted {
   width: 100%;
 }
 
+.dark-blue {
+  color: var(--global--color-dark-blue);
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
