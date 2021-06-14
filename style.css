@@ -2854,8 +2854,8 @@ pre.wp-block-preformatted {
 .front-page--splash {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: clamp(8rem, 25vw, 20rem) auto auto;
-      grid-template-rows: clamp(8rem, 25vw, 20rem) auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
   -ms-grid-columns: 0px 0px (1fr)[8] 0px 0px;
       grid-template-columns: 0px 0px repeat(8, 1fr) 0px 0px;
   grid-gap: 10px 0px;
@@ -2912,7 +2912,7 @@ pre.wp-block-preformatted {
 
 .front-page--splash--centennial-logo .wp-block-group__inner-container figure.wp-block-image.size-large {
   margin: 0 !important;
-  height: clamp(8rem, 25vw, 20rem);
+  height: clamp(8rem, 40vw, 20rem);
   width: auto;
   padding-left: 15px;
 }
