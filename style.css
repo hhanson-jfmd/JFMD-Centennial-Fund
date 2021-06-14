@@ -3072,9 +3072,9 @@ pre.wp-block-preformatted {
 }
 
 .intro--copy {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1 / span 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2 / span 4;
   -ms-grid-row: 2;
   grid-row: 2;
 }
@@ -3084,14 +3084,15 @@ pre.wp-block-preformatted {
 }
 
 .intro--quote {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 3;
-  grid-column: 4 / span 3;
+  grid-column: 4 / -1;
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .intro--quote .wp-block-group__inner-container h3 {
