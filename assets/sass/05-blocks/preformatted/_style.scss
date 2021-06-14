@@ -39,7 +39,7 @@ pre.wp-block-preformatted {
         margin: 0;
         figure.wp-block-image.size-large {
           margin: 0 !important;
-          height: clamp(8rem, 100%, 20rem);
+          height: clamp(8rem, 40vw, 20rem);
           width: auto;
           padding-left: 0.5rem;
           &.logo {
