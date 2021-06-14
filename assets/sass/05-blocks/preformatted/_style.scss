@@ -39,9 +39,9 @@ pre.wp-block-preformatted {
         margin: 0;
         figure.wp-block-image.size-large {
           margin: 0 !important;
-          height: clamp(8rem, 40vw, 20rem);
+          height: clamp(8rem, 100%, 20rem);
           width: auto;
-          padding-left: 15px;
+          padding-left: 0.5rem;
           &.logo {
             z-index: 2;
           }
@@ -55,7 +55,7 @@ pre.wp-block-preformatted {
     &--blue-block {
       grid-column: 3 / span 2;
       grid-row: 1;
-      margin: 0;
+      margin: 1rem 0;
       height: 100%;
       width: auto;
       figure img {

@@ -2912,9 +2912,9 @@ pre.wp-block-preformatted {
 
 .front-page--splash--centennial-logo .wp-block-group__inner-container figure.wp-block-image.size-large {
   margin: 0 !important;
-  height: clamp(8rem, 40vw, 20rem);
+  height: clamp(8rem, 100%, 20rem);
   width: auto;
-  padding-left: 15px;
+  padding-left: 0.5rem;
 }
 
 .front-page--splash--centennial-logo .wp-block-group__inner-container figure.wp-block-image.size-large.logo {
@@ -2932,7 +2932,7 @@ pre.wp-block-preformatted {
   grid-column: 3 / span 2;
   -ms-grid-row: 1;
   grid-row: 1;
-  margin: 0;
+  margin: 1rem 0;
   height: 100%;
   width: auto;
 }
