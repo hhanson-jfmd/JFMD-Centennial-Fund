@@ -843,7 +843,6 @@ template {
  * Top Level Wrappers (header, main, footer)
  * - Set vertical padding and horizontal margins
  */
-.site-header,
 .site-main,
 .widget-area,
 .site-footer {
@@ -2996,9 +2995,15 @@ pre.wp-block-preformatted {
 .front-page--splash--titles .wp-block-group__inner-container .intro {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 6vw, 3rem);
   font-weight: 300;
   color: #8e8e8e;
+}
+
+@media only screen and (min-width: 822px) {
+  .front-page--splash--titles .wp-block-group__inner-container .intro {
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
 }
 
 .front-page--splash--titles .wp-block-group__inner-container .main-title {
@@ -3007,7 +3012,13 @@ pre.wp-block-preformatted {
   font-size: 5.4rem;
   letter-spacing: -0.178rem;
   line-height: 0.85;
-  font-size: clamp(2rem, 4.8vw, 6rem);
+  font-size: clamp(2rem, 8vw, 6rem);
+}
+
+@media only screen and (min-width: 822px) {
+  .front-page--splash--titles .wp-block-group__inner-container .main-title {
+    font-size: clamp(2rem, 4.8vw, 6rem);
+  }
 }
 
 .front-page--splash--titles .wp-block-group__inner-container .subhead {
@@ -3016,6 +3027,7 @@ pre.wp-block-preformatted {
   font-size: clamp(1.7rem, 4vw, 4rem);
   font-weight: 300;
   color: #8e8e8e;
+  line-height: 0.8;
 }
 
 .front-page--splash--branding {

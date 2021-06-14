@@ -85,9 +85,12 @@ pre.wp-block-preformatted {
         .intro {
           margin-top: 0;
           margin-bottom: 0;
-          font-size: clamp(1rem, 3vw, 3rem);
+          font-size: clamp(1rem, 6vw, 3rem);
           font-weight: 300;
           color: #8e8e8e;
+          @include media(desktop) {
+            font-size: clamp(1rem, 3vw, 3rem);
+          }
         }
         .main-title {
           margin-top: 0;
@@ -95,7 +98,10 @@ pre.wp-block-preformatted {
           font-size: 5.4rem;
           letter-spacing: -0.178rem;
           line-height: 0.85;
-          font-size: clamp(2rem, 4.8vw, 6rem);
+          font-size: clamp(2rem, 8vw, 6rem);
+          @include media(desktop) {
+            font-size: clamp(2rem, 4.8vw, 6rem);
+          }
         }
         .subhead {
           margin-top: 0;
@@ -103,6 +109,7 @@ pre.wp-block-preformatted {
           font-size: clamp(1.7rem, 4vw, 4rem);
           font-weight: 300;
           color: #8e8e8e;
+          line-height: 0.8;
         }
       }
     }
