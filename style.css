@@ -3053,6 +3053,8 @@ pre.wp-block-preformatted {
     display: grid;
     -ms-grid-columns: (1fr)[8];
         grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: 1fr auto 1fr;
+        grid-template-rows: 1fr auto 1fr;
   }
 }
 
@@ -3084,6 +3086,19 @@ pre.wp-block-preformatted {
   grid-column: 4 / -1;
   grid-row: 1 / -1;
   z-index: -1;
+}
+
+.intro--img figure {
+  height: 100%;
+  width: 100%;
+}
+
+.intro--img figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center left;
+     object-position: center left;
+  height: 100%;
 }
 
 .white-bg {
