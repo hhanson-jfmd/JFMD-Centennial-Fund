@@ -3072,11 +3072,19 @@ pre.wp-block-preformatted {
 }
 
 .intro--copy {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / span 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / span 5;
   -ms-grid-row: 2;
   grid-row: 2;
+}
+
+@media only screen and (min-width: 822px) {
+  .intro--copy {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2 / span 4;
+  }
 }
 
 .intro--copy .wp-block-group__inner-container p {
@@ -3090,9 +3098,9 @@ pre.wp-block-preformatted {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .intro--quote .wp-block-group__inner-container h3 {
@@ -3105,14 +3113,11 @@ pre.wp-block-preformatted {
   grid-row: 1 / -1;
   z-index: -1;
   margin: 0;
-}
-
-.intro--img figure {
   height: 100%;
   width: 100%;
 }
 
-.intro--img figure img {
+.intro--img img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center left;
