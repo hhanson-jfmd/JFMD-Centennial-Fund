@@ -852,17 +852,14 @@ template {
   margin-right: auto;
 }
 
-.site-header {
+/** .site-header {
   padding-top: calc(0.75 * var(--global--spacing-vertical));
   padding-bottom: calc(2 * var(--global--spacing-vertical));
-}
 
-@media only screen and (min-width: 482px) {
-  .site-header {
+  @include media(mobile) {
     padding-bottom: calc(3 * var(--global--spacing-vertical));
   }
-}
-
+} */
 /**
  * Site-main children wrappers
  * - Add double vertical margins here for clearer hierarchy
@@ -3893,24 +3890,19 @@ table.wp-calendar-table caption {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: var(--global--spacing-vertical);
+  /* @include media(mobile) {
+		padding-top: calc(var(--global--spacing-vertical) / 0.75); // 40px
+	} 
+
+	@include media(desktop) {
+		padding-top: calc(2.4 * var(--global--spacing-vertical)); // 60px
+	} */
 }
 
 .wp-custom-logo .site-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media only screen and (min-width: 482px) {
-  .site-header {
-    padding-top: calc(var(--global--spacing-vertical) / 0.75);
-  }
-}
-
-@media only screen and (min-width: 822px) {
-  .site-header {
-    padding-top: calc(2.4 * var(--global--spacing-vertical));
-  }
 }
 
 .site-branding {
@@ -3978,7 +3970,6 @@ table.wp-calendar-table caption {
 
 .site-header > .site-logo {
   width: 100%;
-  padding-bottom: calc(var(--global--spacing-vertical) * 1.5);
   border-bottom: 1px solid;
   text-align: center;
 }
@@ -4005,7 +3996,6 @@ table.wp-calendar-table caption {
 @media only screen and (max-width: 481px) {
   .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
     position: absolute;
-    padding-top: calc(0.5 * var(--global--spacing-vertical));
     margin-top: 0;
     top: var(--global--admin-bar--height);
   }
@@ -4013,7 +4003,7 @@ table.wp-calendar-table caption {
     display: none;
   }
   .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
-    max-height: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit)) + 1.7em);
+    max-height: 65px;
   }
   .site-header.has-logo.has-title-and-tagline {
     -webkit-box-align: start;
@@ -4041,11 +4031,11 @@ table.wp-calendar-table caption {
   body:not(.primary-navigation-open) .site-header.has-logo.has-title-and-tagline .menu-button-container {
     position: relative;
     padding-top: 0;
-    margin-top: calc(0px - var(--button--padding-vertical) + (0.25 * var(--global--spacing-unit)));
+    margin-top: calc( 0px - var(--button--padding-vertical) + (0.25 * var(--global--spacing-unit)));
   }
   body:not(.primary-navigation-open) .site-header.has-logo.has-title-and-tagline .menu-button-container #primary-mobile-menu {
-    padding-left: calc(var(--global--spacing-horizontal) * 0.6 - 4.5px);
-    padding-right: calc(var(--global--spacing-horizontal) * 0.6 - 4.5px);
+    padding-left: calc( var(--global--spacing-horizontal) * 0.6 - 4.5px);
+    padding-right: calc( var(--global--spacing-horizontal) * 0.6 - 4.5px);
     margin-right: calc(0px - var(--global--spacing-horizontal) * 0.6);
   }
   .site-header:not(.has-logo).has-title-and-tagline .site-branding {

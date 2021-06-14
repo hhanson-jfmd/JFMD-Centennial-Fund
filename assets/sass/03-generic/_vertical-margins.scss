@@ -20,14 +20,14 @@
   margin-right: auto;
 }
 
-.site-header {
+/** .site-header {
   padding-top: calc(0.75 * var(--global--spacing-vertical));
   padding-bottom: calc(2 * var(--global--spacing-vertical));
 
   @include media(mobile) {
     padding-bottom: calc(3 * var(--global--spacing-vertical));
   }
-}
+} */
 
 /**
  * Site-main children wrappers
