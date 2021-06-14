@@ -126,3 +126,40 @@ pre.wp-block-preformatted {
     }
   }
 }
+
+.intro {
+  display: block;
+
+  @include media(tablet) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  &--headline {
+    grid-column: 2 / span 5;
+  }
+  &--copy {
+    grid-column: 1 / span 5;
+  }
+  &--quote {
+    grid-column: 4 / span 3;
+  }
+  &--img {
+    grid-column: 4 / -1;
+  }
+}
+
+.white-bg {
+  background-color: rgba(255, 255, 255, 0.6);
+  .wp-block-group__inner-container {
+    padding: 15px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      width: 100%;
+    }
+  }
+}
