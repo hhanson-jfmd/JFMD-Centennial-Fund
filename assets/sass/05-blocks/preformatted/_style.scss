@@ -96,11 +96,13 @@ pre.wp-block-preformatted {
           margin-top: 0;
           margin-bottom: 0;
           font-size: 5.4rem;
-          letter-spacing: -0.178rem;
+          letter-spacing: -0.106rem;
+
           line-height: 0.85;
           font-size: clamp(2rem, 8vw, 6rem);
           @include media(desktop) {
             font-size: clamp(2rem, 4.8vw, 6rem);
+            letter-spacing: -0.178rem;
           }
         }
         .subhead {

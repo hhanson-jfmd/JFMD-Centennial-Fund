@@ -3007,7 +3007,7 @@ pre.wp-block-preformatted {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 5.4rem;
-  letter-spacing: -0.178rem;
+  letter-spacing: -0.106rem;
   line-height: 0.85;
   font-size: clamp(2rem, 8vw, 6rem);
 }
@@ -3015,6 +3015,7 @@ pre.wp-block-preformatted {
 @media only screen and (min-width: 822px) {
   .front-page--splash--titles .wp-block-group__inner-container .main-title {
     font-size: clamp(2rem, 4.8vw, 6rem);
+    letter-spacing: -0.178rem;
   }
 }
 
