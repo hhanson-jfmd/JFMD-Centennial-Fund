@@ -3139,6 +3139,8 @@ pre.wp-block-preformatted {
 @media only screen and (min-width: 592px) {
   .intro--blue-block {
     display: block;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
   }
 }
 
@@ -3148,6 +3150,7 @@ pre.wp-block-preformatted {
   grid-column: 3 / span 5;
   -ms-grid-row: 4;
   grid-row: 4;
+  padding-top: 2rem;
 }
 
 .white-bg {
