@@ -2858,8 +2858,8 @@ pre.wp-block-preformatted {
 .front-page--splash {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
+  -ms-grid-rows: clamp(8rem, 20vw, 20rem) auto auto;
+      grid-template-rows: clamp(8rem, 20vw, 20rem) auto auto;
   -ms-grid-columns: 0px 0px (1fr)[8] 0px 0px;
       grid-template-columns: 0px 0px repeat(8, 1fr) 0px 0px;
   grid-gap: 10px 0px;
@@ -2885,12 +2885,18 @@ pre.wp-block-preformatted {
 }
 
 .front-page--splash--centennial-logo {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 5;
-  grid-column: 6 / span 5;
+  grid-column: 1 / -1;
   -ms-grid-row: 1;
   grid-row: 1;
   margin: 0;
+}
+
+@media only screen and (min-width: 592px) {
+  .front-page--splash--centennial-logo {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 5;
+    grid-column: 6 / span 5;
+  }
 }
 
 .front-page--splash--centennial-logo .wp-block-group__inner-container {
@@ -2910,7 +2916,7 @@ pre.wp-block-preformatted {
 
 .front-page--splash--centennial-logo .wp-block-group__inner-container figure.wp-block-image.size-large {
   margin: 0 !important;
-  height: 20vw;
+  height: clamp(8rem, 20vw, 20rem);
   width: auto;
   padding-left: 15px;
 }
@@ -2939,7 +2945,6 @@ pre.wp-block-preformatted {
   grid-column: 1/-1;
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
   -ms-grid-columns: 0px 0px (1fr)[8] 0px 0px;
       grid-template-columns: 0px 0px repeat(8, 1fr) 0px 0px;
   background-color: rgba(255, 255, 255, 0.8);
