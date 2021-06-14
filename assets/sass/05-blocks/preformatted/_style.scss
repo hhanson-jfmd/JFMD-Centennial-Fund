@@ -101,7 +101,7 @@ pre.wp-block-preformatted {
           margin-bottom: 0;
           font-size: 5.4rem;
           letter-spacing: -0.106rem;
-
+          color: var(--global--color-dark-blue);
           line-height: 0.85;
           font-size: clamp(2rem, 8vw, 6rem);
           @include media(desktop) {
@@ -142,6 +142,7 @@ pre.wp-block-preformatted {
       h2 {
         line-height: 1;
         font-weight: 700;
+        color: var(--global--color-dark-blue);
       }
     }
   }
@@ -167,6 +168,7 @@ pre.wp-block-preformatted {
         line-height: 1;
         font-weight: 700;
         padding: 2rem 15px;
+        color: var(--global--color-dark-blue);
       }
     }
   }

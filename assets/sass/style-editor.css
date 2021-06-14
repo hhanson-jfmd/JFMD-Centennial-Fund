@@ -118,6 +118,7 @@
     255,
     0.5
   );
+  --global--color-dark-blue: #3d4462;
   --global--color-white-90: rgba(255, 255, 255, 0.9);
   --global--color-primary: var(
     --global--color-dark-gray

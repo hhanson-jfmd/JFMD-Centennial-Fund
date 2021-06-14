@@ -209,6 +209,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     255,
     0.5
   );
+  --global--color-dark-blue: #3d4462;
   --global--color-white-90: rgba(255, 255, 255, 0.9);
   --global--color-primary: var(
     --global--color-dark-gray
@@ -3014,6 +3015,7 @@ pre.wp-block-preformatted {
   margin-bottom: 0;
   font-size: 5.4rem;
   letter-spacing: -0.106rem;
+  color: var(--global--color-dark-blue);
   line-height: 0.85;
   font-size: clamp(2rem, 8vw, 6rem);
 }
@@ -3069,6 +3071,7 @@ pre.wp-block-preformatted {
 .intro--headline .wp-block-group__inner-container h2 {
   line-height: 1;
   font-weight: 700;
+  color: var(--global--color-dark-blue);
 }
 
 .intro--copy {
@@ -3107,6 +3110,7 @@ pre.wp-block-preformatted {
   line-height: 1;
   font-weight: 700;
   padding: 2rem 15px;
+  color: var(--global--color-dark-blue);
 }
 
 .intro--img {
