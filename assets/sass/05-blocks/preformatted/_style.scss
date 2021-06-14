@@ -67,7 +67,7 @@ pre.wp-block-preformatted {
       grid-column: 1/-1;
       display: grid;
       grid-template-columns: 0px 0px repeat(8, 1fr) 0px 0px;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.6);
       grid-row: 2 / span 2;
       transform: translateY(-3vw);
       @include media(desktop) {
