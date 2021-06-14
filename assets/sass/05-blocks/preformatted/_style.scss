@@ -136,20 +136,26 @@ pre.wp-block-preformatted {
   }
   &--headline {
     grid-column: 2 / span 5;
+    grid-row: 1;
   }
   &--copy {
     grid-column: 1 / span 5;
+    grid-row: 2;
   }
   &--quote {
     grid-column: 4 / span 3;
+    grid-row: 3;
   }
   &--img {
     grid-column: 4 / -1;
+    grid-row: 1 / -1;
+    z-index: -1;
   }
 }
 
 .white-bg {
   background-color: rgba(255, 255, 255, 0.6);
+  height: min-content;
   .wp-block-group__inner-container {
     padding: 15px;
     h1,
