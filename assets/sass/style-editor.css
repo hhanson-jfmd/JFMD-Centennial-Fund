@@ -112,6 +112,7 @@
   --global--color-orange: #e4dad1;
   --global--color-yellow: #eeeadd;
   --global--color-white: #fff;
+  --global--gradient-light: linear-gradient(135deg, rgba(206,234,237,1) 0%, rgba(206,211,233,1) 100%);
   --global--color-white-50: rgba(
     255,
     255,

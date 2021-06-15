@@ -220,3 +220,18 @@ pre.wp-block-preformatted {
 .dark-blue {
   color: var(--global--color-dark-blue);
 }
+
+.striped-list {
+	list-style-type: none;
+	padding-left: 0;
+ 	& li {
+     font-family: var(--global--font-primary);
+     font-weight: 700;
+		 padding: 10px;
+     color: var(--global--color-dark-blue);
+  		&:nth-child(2n+1) {
+        background: var(--global--gradient-light);
+        color:#fff;
+      }
+	}
+}

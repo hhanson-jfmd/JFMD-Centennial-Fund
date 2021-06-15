@@ -203,6 +203,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-orange: #e4dad1;
   --global--color-yellow: #eeeadd;
   --global--color-white: #fff;
+  --global--gradient-light: linear-gradient(135deg, rgba(206,234,237,1) 0%, rgba(206,211,233,1) 100%);
   --global--color-white-50: rgba(
     255,
     255,
@@ -3181,6 +3182,23 @@ pre.wp-block-preformatted {
 
 .dark-blue {
   color: var(--global--color-dark-blue);
+}
+
+.striped-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.striped-list li {
+  font-family: var(--global--font-primary);
+  font-weight: 700;
+  padding: 10px;
+  color: var(--global--color-dark-blue);
+}
+
+.striped-list li:nth-child(2n+1) {
+  background: var(--global--gradient-light);
+  color: #fff;
 }
 
 .wp-block-pullquote {
