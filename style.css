@@ -3198,7 +3198,13 @@ pre.wp-block-preformatted {
 
 .striped-list li:nth-child(2n+1) {
   background: var(--global--gradient-light);
-  color: #fff;
+}
+
+.striped-list.split li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .wp-block-pullquote {
