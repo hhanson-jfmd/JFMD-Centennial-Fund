@@ -3192,7 +3192,7 @@ pre.wp-block-preformatted {
 .striped-list li {
   font-family: var(--global--font-primary);
   font-weight: 700;
-  padding: 10px;
+  padding: 10px 20%;
   color: var(--global--color-dark-blue);
 }
 
@@ -3205,6 +3205,8 @@ pre.wp-block-preformatted {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  font-size: 1.7rem;
+  line-height: 1;
 }
 
 .wp-block-pullquote {
