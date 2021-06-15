@@ -224,11 +224,16 @@ pre.wp-block-preformatted {
 .striped-list {
 	list-style-type: none;
 	padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   li {
      font-family: var(--global--font-primary);
      font-weight: 700;
 		 padding: 10px 10%;
      color: var(--global--color-dark-blue);
+     
   		&:nth-child(2n+1) {
         background: var(--global--gradient-light);
       }
@@ -237,7 +242,9 @@ pre.wp-block-preformatted {
     li{
       display:grid;
       grid-template-columns:1fr 1fr;
-      font-size:1.7rem;
+      font-size: 1.5rem;
+      height: 100%;
+      align-items: center;
       line-height:1;
     }
   }
