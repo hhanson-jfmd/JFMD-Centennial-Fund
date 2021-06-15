@@ -227,7 +227,7 @@ pre.wp-block-preformatted {
   li {
      font-family: var(--global--font-primary);
      font-weight: 700;
-		 padding: 10px 20%;
+		 padding: 10px 10%;
      color: var(--global--color-dark-blue);
   		&:nth-child(2n+1) {
         background: var(--global--gradient-light);
@@ -241,4 +241,7 @@ pre.wp-block-preformatted {
       line-height:1;
     }
   }
+}
+.wp-block-column{
+  padding: 0 10px;
 }
