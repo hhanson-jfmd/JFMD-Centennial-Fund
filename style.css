@@ -3294,7 +3294,7 @@ pre.wp-block-preformatted {
   z-index: 2;
 }
 
-.offset-quote .wp-block-group .wp-block-group__inner-container {
+.offset-quote .wp-block-group .wp-block-group__inner-container h2 {
   line-height: 1;
 }
 
