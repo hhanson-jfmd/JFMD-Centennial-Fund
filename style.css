@@ -204,6 +204,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-yellow: #eeeadd;
   --global--color-white: #fff;
   --global--gradient-light: linear-gradient(135deg, rgba(206,234,237,1) 0%, rgba(206,211,233,1) 100%);
+  --global--gradient-dark: linear-gradient(135deg, rgba(134,202,211,1) 0%, rgba(133,145,199,1) 100%);
   --global--color-white-50: rgba(
     255,
     255,
@@ -3296,6 +3297,11 @@ pre.wp-block-preformatted {
 
 .offset-quote .wp-block-group .wp-block-group__inner-container h2 {
   line-height: 1;
+}
+
+.focus-areas {
+  background-color: var(--global--gradient-dark);
+  color: #fff;
 }
 
 .wp-block-pullquote {
