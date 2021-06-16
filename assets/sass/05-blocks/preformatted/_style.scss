@@ -274,6 +274,7 @@ pre.wp-block-preformatted {
       margin-right:auto;
       @include media(tablet){
         width:100%;
+        padding-left:15px;
       }
     }
   

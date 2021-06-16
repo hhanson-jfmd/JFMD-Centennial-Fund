@@ -3247,6 +3247,7 @@ pre.wp-block-preformatted {
 
 .sixty-forty .wp-block-group .wp-block-group__inner-container h2, .sixty-forty .wp-block-group .wp-block-group__inner-container p {
   max-width: 100%;
+  margin: 0;
 }
 
 .sixty-forty figure {
@@ -3258,6 +3259,7 @@ pre.wp-block-preformatted {
 @media only screen and (min-width: 592px) {
   .sixty-forty figure {
     width: 100%;
+    padding-left: 15px;
   }
 }
 
