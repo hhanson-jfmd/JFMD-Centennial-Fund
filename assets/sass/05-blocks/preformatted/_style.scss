@@ -279,3 +279,22 @@ pre.wp-block-preformatted {
     }
   
 }
+.offset-quote{
+  @include media(tablet){
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    figure{
+      grid-column: 1 / 3;
+      grid-row: 1;
+      transform: translatey(4vw);
+    }
+    .wp-block-group .wp-block-group__inner-container{
+      grid-column: 2/-1;
+      grid-row: 1;
+      z-index: 2;
+    }
+  }
+  .wp-block-group .wp-block-group__inner-container{
+    line-height:1;
+  }
+}
