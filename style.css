@@ -3300,7 +3300,7 @@ pre.wp-block-preformatted {
 }
 
 .focus-areas {
-  background-color: var(--global--gradient-dark);
+  background: var(--global--gradient-dark);
   color: #fff;
 }
 
