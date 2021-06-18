@@ -3208,7 +3208,7 @@ pre.wp-block-preformatted {
   color: var(--global--color-dark-blue);
 }
 
-.striped-list li:nth-child(2n+1) {
+.striped-list li:nth-child(2n + 1) {
   background: var(--global--gradient-light);
 }
 
@@ -3226,7 +3226,7 @@ pre.wp-block-preformatted {
 }
 
 .striped-list.split li .strong {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .wp-block-column {
@@ -3246,7 +3246,8 @@ pre.wp-block-preformatted {
   padding: 0 0 0 10px;
 }
 
-.sixty-forty .wp-block-group .wp-block-group__inner-container h2, .sixty-forty .wp-block-group .wp-block-group__inner-container p {
+.sixty-forty .wp-block-group .wp-block-group__inner-container h2,
+.sixty-forty .wp-block-group .wp-block-group__inner-container p {
   max-width: 100%;
   margin: 0;
 }
