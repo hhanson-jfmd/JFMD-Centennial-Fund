@@ -3345,6 +3345,12 @@ pre.wp-block-preformatted {
   grid-row: 1;
 }
 
+@media only screen and (min-width: 592px) {
+  .carousel-cell .wp-block-column:first-child .wp-block-group {
+    margin-right: 100px;
+  }
+}
+
 .carousel-cell .wp-block-column:last-child {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;

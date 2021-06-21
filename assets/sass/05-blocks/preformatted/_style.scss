@@ -337,16 +337,12 @@ pre.wp-block-preformatted {
   .wp-block-column:first-child {
     grid-column: 1 / span 2;
     grid-row: 1;
-	}
-	h5{
-		font-size:1.8rem;
-		
-	}
-	h5, p{
-		margin-right:100px;
-		line-height:.8;
-	}
 
+    .wp-block-group {
+      @include media(tablet) {
+        margin-right: 100px;
+      }
+    }
   }
   .wp-block-column:last-child {
     grid-column: 2 / span 2;
