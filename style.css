@@ -3324,6 +3324,10 @@ pre.wp-block-preformatted {
   color: #fff;
 }
 
+.wp-block-group.carousel-cell {
+  width: 100%;
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
