@@ -239,7 +239,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   /* Spacing */
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
-  --global--spacing-horizontal: 15px;
+  --global--spacing-horizontal: $baseline-unit;
   --global--spacing-vertical: 30px;
   /* Elevation */
   --global--elevation: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -738,7 +738,9 @@ template {
  * Root Media Query Variables
  */
 :root {
-  --responsive--spacing-horizontal: var(--global--spacing-horizontal);
+  --responsive--spacing-horizontal: calc(
+    2 * var(--global--spacing-horizontal) * 0.6
+  );
   --responsive--aligndefault-width: calc(
     100vw - var(--responsive--spacing-horizontal)
   );
@@ -770,6 +772,10 @@ template {
 
 @media only screen and (min-width: 822px) {
   :root {
+    --responsive--aligndefault-width: min(
+      calc(100vw - var(--global--spacing-horizontal)),
+      610px
+    );
     --responsive--alignwide-width: min(
       calc(100vw - var(--global--spacing-horizontal)),
       1240px
