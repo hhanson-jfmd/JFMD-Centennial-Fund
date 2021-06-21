@@ -3328,6 +3328,27 @@ pre.wp-block-preformatted {
   width: 100%;
 }
 
+@media only screen and (min-width: 592px) {
+  .carousel-cell {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 100px 1fr;
+        grid-template-columns: 2fr 100px 1fr;
+  }
+}
+
+.carousel-cell .wp-block-column:first-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.carousel-cell .wp-block-column:last-child {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;

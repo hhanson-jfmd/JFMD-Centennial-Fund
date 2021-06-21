@@ -330,4 +330,14 @@ pre.wp-block-preformatted {
 
 .carousel-cell {
   width: 100%;
+  @include media(tablet) {
+    display: grid;
+    grid-template-columns: 2fr 100px 1fr;
+  }
+  .wp-block-column:first-child {
+    grid-column: 1 / span 2;
+  }
+  .wp-block-column:last-child {
+    grid-column: 2 / span 2;
+  }
 }
