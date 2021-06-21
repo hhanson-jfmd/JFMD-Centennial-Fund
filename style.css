@@ -169,12 +169,12 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --heading--font-size-h3: calc(1.25 * var(--global--font-size-lg));
   --heading--font-size-h2: var(--global--font-size-xl);
   --heading--font-size-h1: var(--global--font-size-page-title);
-  --heading--letter-spacing-h6: 0.05em;
-  --heading--letter-spacing-h5: 0.05em;
-  --heading--letter-spacing-h4: var(--global--letter-spacing);
-  --heading--letter-spacing-h3: var(--global--letter-spacing);
-  --heading--letter-spacing-h2: var(--global--letter-spacing);
-  --heading--letter-spacing-h1: var(--global--letter-spacing);
+  --heading--letter-spacing-h6: -0.05em;
+  --heading--letter-spacing-h5: -0.05em;
+  --heading--letter-spacing-h4: -0.05em;
+  --heading--letter-spacing-h3: -0.05em;
+  --heading--letter-spacing-h2: -0.05em;
+  --heading--letter-spacing-h1: -0.05em;
   --heading--line-height-h6: var(--global--line-height-heading);
   --heading--line-height-h5: var(--global--line-height-heading);
   --heading--line-height-h4: var(--global--line-height-heading);
@@ -203,8 +203,16 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-orange: #e4dad1;
   --global--color-yellow: #eeeadd;
   --global--color-white: #fff;
-  --global--gradient-light: linear-gradient(135deg, rgba(206,234,237,1) 0%, rgba(206,211,233,1) 100%);
-  --global--gradient-dark: linear-gradient(135deg, rgba(134,202,211,1) 0%, rgba(133,145,199,1) 100%);
+  --global--gradient-light: linear-gradient(
+    135deg,
+    rgba(206, 234, 237, 1) 0%,
+    rgba(206, 211, 233, 1) 100%
+  );
+  --global--gradient-dark: linear-gradient(
+    135deg,
+    rgba(134, 202, 211, 1) 0%,
+    rgba(133, 145, 199, 1) 100%
+  );
   --global--color-white-50: rgba(
     255,
     255,
