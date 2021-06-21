@@ -222,8 +222,12 @@ pre.wp-block-preformatted {
   .wp-block-column {
     .wp-block-group {
       background: var(--global--gradient-dark);
+      padding: 10px;
       .wp-block-group__inner-container {
         color: #fff;
+        ul {
+          margin: 0;
+        }
       }
     }
   }
