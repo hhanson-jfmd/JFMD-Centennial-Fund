@@ -3,158 +3,264 @@
 /**
  * These selectors set the default max width for content appearing inside a post or page.
  */
-.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce),
-*[class*="inner-container"] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
-	@extend %responsive-aligndefault-width;
+.entry-content
+  > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce),
+*[class*="inner-container"]
+  > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+  @extend %responsive-aligndefault-width;
 }
 
 /**
  * .alignleft
  */
 .alignleft {
+  /*rtl:ignore*/
+  text-align: left;
 
-	/*rtl:ignore*/
-	text-align: left;
-
-	margin-top: 0;
+  margin-top: 0;
 }
 
 // Targeting the .entry-content class is necessary to ensure these styles
 // only apply when the block isn't nested.
 .entry-content > .alignleft {
-	max-width: var(--responsive--aligndefault-width);
-	@extend %responsive-alignleft;
+  max-width: var(--responsive--aligndefault-width);
+  @extend %responsive-alignleft;
 }
 
 @include media(mobile) {
+  .alignleft {
+    /*rtl:ignore*/
+    float: left;
 
-	.alignleft {
+    /*rtl:ignore*/
+    margin-right: var(--global--spacing-horizontal);
+    margin-bottom: var(--global--spacing-vertical);
+  }
 
-		/*rtl:ignore*/
-		float: left;
-
-		/*rtl:ignore*/
-		margin-right: var(--global--spacing-horizontal);
-		margin-bottom: var(--global--spacing-vertical);
-	}
-
-	.entry-content > .alignleft {
-		max-width: calc(50% - var(--responsive--alignleft-margin));
-	}
+  .entry-content > .alignleft {
+    max-width: calc(50% - var(--responsive--alignleft-margin));
+  }
 }
 
 /**
  * .aligncenter
  */
 .aligncenter {
-	clear: both;
-	display: block;
-	float: none;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
+  clear: both;
+  display: block;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 /**
  * .alignright
  */
 .alignright {
-
-	margin-top: 0;
-	margin-bottom: var(--global--spacing-vertical);
+  margin-top: 0;
+  margin-bottom: var(--global--spacing-vertical);
 }
 
 // Targeting the .entry-content class is necessary to ensure these styles
 // only apply when the block isn't nested.
 .entry-content > .alignright {
-	max-width: var(--responsive--aligndefault-width);
-	@extend %responsive-alignright;
+  max-width: var(--responsive--aligndefault-width);
+  @extend %responsive-alignright;
 }
 
 @include media(mobile) {
+  .alignright {
+    /*rtl:ignore*/
+    float: right;
 
-	.alignright {
+    /*rtl:ignore*/
+    margin-left: var(--global--spacing-horizontal);
+  }
 
-		/*rtl:ignore*/
-		float: right;
-
-		/*rtl:ignore*/
-		margin-left: var(--global--spacing-horizontal);
-	}
-
-	.entry-content > .alignright {
-		max-width: calc(50% - var(--responsive--alignright-margin));
-	}
+  .entry-content > .alignright {
+    max-width: calc(50% - var(--responsive--alignright-margin));
+  }
 }
 
 // Make sure siblings of floated elements are top-aligned when nested
 [class*="inner-container"] > .alignleft + *,
 [class*="inner-container"] > .alignright + * {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 /**
  * .alignwide
  */
 .alignwide {
-	clear: both;
-	@extend %responsive-alignwide-width;
+  clear: both;
+  @extend %responsive-alignwide-width;
 }
 
 .alignwide [class*="inner-container"] > .alignwide {
-	@extend %responsive-alignwide-width-nested;
+  @extend %responsive-alignwide-width-nested;
 }
 
 /**
  * .alignfull
  */
 .alignfull {
-	clear: both;
-	@extend %responsive-alignfull-width-mobile;
-	@extend %responsive-alignfull-width;
+  clear: both;
+  @extend %responsive-alignfull-width-mobile;
+  @extend %responsive-alignfull-width;
 }
 
 .alignfull [class*="inner-container"] > .alignwide {
-	@extend %responsive-alignwide-width-nested;
+  @extend %responsive-alignwide-width-nested;
 }
 
 // Content alignment
 .has-left-content {
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .has-right-content {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 // Parallax
 .has-parallax {
-	background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 // Drop caps
 .has-drop-cap:not(:focus)::first-letter {
-	font-family: var(--heading--font-family);
-	font-weight: var(--heading--font-weight);
-	line-height: 0.66;
-	text-transform: uppercase;
-	font-style: normal;
-	float: left;
-	margin: 0.1em 0.1em 0 0;
-	font-size: calc(1.2 * var(--heading--font-size-h1));
+  font-family: var(--heading--font-family);
+  font-weight: var(--heading--font-weight);
+  line-height: 0.66;
+  text-transform: uppercase;
+  font-style: normal;
+  float: left;
+  margin: 0.1em 0.1em 0 0;
+  font-size: calc(1.2 * var(--heading--font-size-h1));
 }
 
 .has-drop-cap:not(:focus)::after {
-	content: "";
-	display: table;
-	clear: both;
-	padding-top: 14px;
+  content: "";
+  display: table;
+  clear: both;
+  padding-top: 14px;
 }
 
 .desktop-only {
-	display: none;
+  display: none;
 
-	@include media(mobile) {
-		display: block;
-	}
+  @include media(mobile) {
+    display: block;
+  }
+}
+
+// UTILITY CLASSES //
+.m0 {
+  margin: 0;
+}
+.p0 {
+  padding: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.pt0 {
+  padding-top: 0;
+}
+.pb0 {
+  padding-bottom: 0;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+.mb1 {
+  margin-bottom: 1rem;
+}
+.pt1 {
+  padding-top: 1rem;
+}
+.pb1 {
+  padding-bottom: 1rem;
+}
+
+.mt2 {
+  margin-top: 2rem;
+}
+.mb2 {
+  margin-bottom: 2rem;
+}
+.pt2 {
+  padding-top: 2rem;
+}
+.pb2 {
+  padding-bottom: 2rem;
+}
+
+.mt3 {
+  margin-top: 3rem;
+}
+.mb3 {
+  margin-bottom: 3rem;
+}
+.pt3 {
+  padding-top: 3rem;
+}
+.pb3 {
+  padding-bottom: 3rem;
+}
+
+.mt4 {
+  margin-top: 4rem;
+}
+.mb4 {
+  margin-bottom: 4rem;
+}
+.pt4 {
+  padding-top: 4rem;
+}
+.pb4 {
+  padding-bottom: 4rem;
+}
+.mt5 {
+  margin-top: 5rem;
+}
+.mb5 {
+  margin-bottom: 5rem;
+}
+.pt5 {
+  padding-top: 5rem;
+}
+.pb5 {
+  padding-bottom: 5rem;
+}
+.mt10 {
+  margin-top: 10vw;
+}
+.mb10 {
+  margin-bottom: 10vw;
+}
+.pt10 {
+  padding-top: 10vw;
+}
+.pb10 {
+  padding-bottom: 10vw;
+}
+.pl10 {
+  padding-left: 10vw;
+}
+.pr10 {
+  padding-right: 10vw;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
+.mr1 {
+  margin-right: 1rem;
 }
