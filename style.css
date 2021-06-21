@@ -240,7 +240,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
   --global--spacing-horizontal: 15px;
-  --global--spacing-vertical: 30px;
+  --global--spacing-vertical: 10px;
   /* Elevation */
   --global--elevation: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
   /* Forms */
