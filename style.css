@@ -3341,12 +3341,17 @@ pre.wp-block-preformatted {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .carousel-cell .wp-block-column:last-child {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  z-index: 2;
 }
 
 .wp-block-pullquote {
