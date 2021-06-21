@@ -17,6 +17,8 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/flickity/css">
 	<?php wp_head(); ?>
 </head>
 
