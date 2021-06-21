@@ -2202,11 +2202,6 @@ input[type="reset"]:disabled,
   margin-right: auto;
 }
 
-.wp-block-group .wp-block-group__inner-container > * {
-  margin-top: calc(0.666 * var(--global--spacing-vertical));
-  margin-bottom: calc(0.666 * var(--global--spacing-vertical));
-}
-
 @media only screen and (min-width: 482px) {
   .wp-block-group .wp-block-group__inner-container > * {
     margin-top: var(--global--spacing-vertical);
@@ -2240,8 +2235,8 @@ input[type="reset"]:disabled,
 .wp-block-group.has-background .wp-block-group__inner-container > .alignfull,
 .wp-block-group.has-background .wp-block-group__inner-container > hr.wp-block-separator:not(.is-style-dots):not(.alignwide).alignfull, .wp-block-group.is-style-twentytwentyone-border .wp-block-group__inner-container > .alignfull,
 .wp-block-group.is-style-twentytwentyone-border .wp-block-group__inner-container > hr.wp-block-separator:not(.is-style-dots):not(.alignwide).alignfull {
-  max-width: calc(var(--responsive--alignfull-width) + (2 * var(--global--spacing-vertical)));
-  width: calc(var(--responsive--alignfull-width) + (2 * var(--global--spacing-vertical)));
+  max-width: calc( var(--responsive--alignfull-width) + (2 * var(--global--spacing-vertical)));
+  width: calc( var(--responsive--alignfull-width) + (2 * var(--global--spacing-vertical)));
   margin-left: calc(-1 * var(--global--spacing-vertical));
 }
 
