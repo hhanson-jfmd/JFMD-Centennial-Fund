@@ -337,7 +337,9 @@ pre.wp-block-preformatted {
   .wp-block-column:first-child {
     grid-column: 1 / span 2;
     grid-row: 1;
-
+    h5 {
+      font-size: 2rem;
+    }
     .wp-block-group {
       @include media(tablet) {
         margin-right: 100px;
