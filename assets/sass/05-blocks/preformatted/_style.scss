@@ -217,6 +217,18 @@ pre.wp-block-preformatted {
     }
   }
 }
+
+.gradient-grid {
+  .wp-block-column {
+    .wp-block-group {
+      background: var(--global--gradient-dark);
+      .wp-block-group__inner-container {
+        color: #fff;
+      }
+    }
+  }
+}
+
 .dark-blue {
   color: var(--global--color-dark-blue);
 }
