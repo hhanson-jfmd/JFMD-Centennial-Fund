@@ -148,7 +148,7 @@
   /* Spacing */
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
-  --global--spacing-horizontal: $baseline-unit;
+  --global--spacing-horizontal: 15px;
   --global--spacing-vertical: 30px;
   /* Elevation */
   --global--elevation: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);

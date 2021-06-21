@@ -108,7 +108,7 @@ $baseline-unit: 10px;
   /* Spacing */
   --global--spacing-unit: #{2 * $baseline-unit}; // 20px
   --global--spacing-measure: unset; // Use ch units here. ie: 60ch = 60 character max-width
-  --global--spacing-horizontal: $baseline-unit; // 10px? maybe 15
+  --global--spacing-horizontal: #{1.5 * $baseline-unit}; // 25px
   --global--spacing-vertical: #{3 * $baseline-unit}; // 30px.
 
   /* Elevation */
