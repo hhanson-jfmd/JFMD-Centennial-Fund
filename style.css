@@ -3331,10 +3331,9 @@ pre.wp-block-preformatted {
 
 @media only screen and (min-width: 592px) {
   .carousel-cell {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 100px 1fr;
-        grid-template-columns: 2fr 100px 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -3345,10 +3344,18 @@ pre.wp-block-preformatted {
   -ms-grid-row: 1;
   grid-row: 1;
   background: var(--global--gradient-light);
+  padding: 2rem 1rem 2rem 2rem;
 }
 
 .carousel-cell .wp-block-column:first-child h5 {
   font-size: 2rem;
+}
+
+@media only screen and (min-width: 592px) {
+  .carousel-cell .wp-block-column:first-child {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
 }
 
 @media only screen and (min-width: 592px) {
@@ -3364,6 +3371,16 @@ pre.wp-block-preformatted {
   -ms-grid-row: 1;
   grid-row: 1;
   z-index: 2;
+  margin: 0;
+}
+
+@media only screen and (min-width: 592px) {
+  .carousel-cell .wp-block-column:last-child {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .carousel-cell .wp-block-column:last-child figure {

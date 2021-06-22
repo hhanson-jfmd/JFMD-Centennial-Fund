@@ -335,15 +335,18 @@ pre.wp-block-preformatted {
   width: 100%;
   display:block;
   @include media(tablet) {
-    display: grid;
-    grid-template-columns: 2fr 100px 1fr;
+    display: flex;
   }
   .wp-block-column:first-child {
     grid-column: 1 / span 2;
     grid-row: 1;
     background:var(--global--gradient-light);
+    padding:2rem 1rem 2rem 2rem;
     h5 {
       font-size: 2rem;
+    }
+    @include media(tablet){
+      transform:translateX(50px);
     }
     .wp-block-group {
       @include media(tablet) {
@@ -355,6 +358,12 @@ pre.wp-block-preformatted {
     grid-column: 2 / span 2;
     grid-row: 1;
     z-index: 2;
+    margin:0;
+    @include media(tablet){
+      transform:translateX(-50px);
+      margin:0;
+      padding:0;
+    }
     figure{
       height:80%;
       width:100%;
