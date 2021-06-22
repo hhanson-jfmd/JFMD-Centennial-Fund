@@ -3366,6 +3366,18 @@ pre.wp-block-preformatted {
   z-index: 2;
 }
 
+.carousel-cell .wp-block-column:last-child figure {
+  height: 80%;
+  width: 100%;
+}
+
+.carousel-cell .wp-block-column:last-child figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: cover;
+     object-position: cover;
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
