@@ -327,7 +327,10 @@ pre.wp-block-preformatted {
 }
 
 //CAROUSEL
-
+.flickity-viewport{
+  width:clamp(450px, 80%, 822px);
+  margin:auto;
+}
 .carousel-cell {
   width: 100%;
   @include media(tablet) {
@@ -337,6 +340,7 @@ pre.wp-block-preformatted {
   .wp-block-column:first-child {
     grid-column: 1 / span 2;
     grid-row: 1;
+    background:var(--global--gradient-light);
     h5 {
       font-size: 2rem;
     }
@@ -350,5 +354,13 @@ pre.wp-block-preformatted {
     grid-column: 2 / span 2;
     grid-row: 1;
     z-index: 2;
+    figure{
+      height:80%;
+      width:100%;
+      img{
+        object-fit:cover;
+        object-position:cover;
+      }
+    }
   }
 }

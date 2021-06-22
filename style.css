@@ -3324,6 +3324,11 @@ pre.wp-block-preformatted {
   color: #fff;
 }
 
+.flickity-viewport {
+  width: clamp(450px, 80%, 822px);
+  margin: auto;
+}
+
 .carousel-cell {
   width: 100%;
 }
@@ -3343,6 +3348,7 @@ pre.wp-block-preformatted {
   grid-column: 1 / span 2;
   -ms-grid-row: 1;
   grid-row: 1;
+  background: var(--global--gradient-light);
 }
 
 .carousel-cell .wp-block-column:first-child h5 {
@@ -3362,6 +3368,18 @@ pre.wp-block-preformatted {
   -ms-grid-row: 1;
   grid-row: 1;
   z-index: 2;
+}
+
+.carousel-cell .wp-block-column:last-child figure {
+  height: 80%;
+  width: 100%;
+}
+
+.carousel-cell .wp-block-column:last-child figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: cover;
+     object-position: cover;
 }
 
 .wp-block-pullquote {
