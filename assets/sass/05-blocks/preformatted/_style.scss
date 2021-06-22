@@ -328,14 +328,18 @@ pre.wp-block-preformatted {
 
 //CAROUSEL
 .flickity-viewport{
-  width:clamp(450px, 80%, 822px);
-  margin:auto;
+  //width:clamp(450px, 80%, 822px);
+  //margin:auto;
 }
 .carousel-cell {
   width: 100%;
+  display:block;
   @include media(tablet) {
     display: grid;
     grid-template-columns: 2fr 100px 1fr;
+  }
+  &:not(.is-selected){
+    display:none;
   }
   .wp-block-column:first-child {
     grid-column: 1 / span 2;

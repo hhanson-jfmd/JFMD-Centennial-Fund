@@ -3324,13 +3324,9 @@ pre.wp-block-preformatted {
   color: #fff;
 }
 
-.flickity-viewport {
-  width: clamp(450px, 80%, 822px);
-  margin: auto;
-}
-
 .carousel-cell {
   width: 100%;
+  display: block;
 }
 
 @media only screen and (min-width: 592px) {
@@ -3340,6 +3336,10 @@ pre.wp-block-preformatted {
     -ms-grid-columns: 2fr 100px 1fr;
         grid-template-columns: 2fr 100px 1fr;
   }
+}
+
+.carousel-cell:not(.is-selected) {
+  display: none;
 }
 
 .carousel-cell .wp-block-column:first-child {
