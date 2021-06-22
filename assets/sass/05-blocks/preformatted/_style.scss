@@ -338,9 +338,6 @@ pre.wp-block-preformatted {
     display: grid;
     grid-template-columns: 2fr 100px 1fr;
   }
-  &:not(.is-selected){
-    display:none;
-  }
   .wp-block-column:first-child {
     grid-column: 1 / span 2;
     grid-row: 1;
@@ -359,11 +356,11 @@ pre.wp-block-preformatted {
     grid-row: 1;
     z-index: 2;
     figure{
-      height:80%;
-      width:100%;
+      //height:80%;
+      //width:100%;
       img{
-        object-fit:cover;
-        object-position:cover;
+        //object-fit:cover;
+        //object-position:cover;
       }
     }
   }

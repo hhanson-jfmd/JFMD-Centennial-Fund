@@ -3338,10 +3338,6 @@ pre.wp-block-preformatted {
   }
 }
 
-.carousel-cell:not(.is-selected) {
-  display: none;
-}
-
 .carousel-cell .wp-block-column:first-child {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -3368,18 +3364,6 @@ pre.wp-block-preformatted {
   -ms-grid-row: 1;
   grid-row: 1;
   z-index: 2;
-}
-
-.carousel-cell .wp-block-column:last-child figure {
-  height: 80%;
-  width: 100%;
-}
-
-.carousel-cell .wp-block-column:last-child figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: cover;
-     object-position: cover;
 }
 
 .wp-block-pullquote {
