@@ -338,7 +338,7 @@ pre.wp-block-preformatted {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h3{font-size: var(--heading--font-size-h2);}
+    h3 strong{font-size: var(--heading--font-size-h2);}
     figure{
       height:100%;
       img{
@@ -349,7 +349,7 @@ pre.wp-block-preformatted {
     }
   }
   h3{line-height: 1;}
-  .headings{
+  &--headings{
     h2{font-size:var(--heading--font-size-h1);}
   }
 }
