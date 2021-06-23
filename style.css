@@ -3109,12 +3109,14 @@ pre.wp-block-preformatted {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
-@media only screen and (min-width: 482px) {
-  .intro--quote .wp-block-group__inner-container {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+@media only screen and (min-width: 592px) {
+  .intro--quote {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -3169,11 +3171,12 @@ pre.wp-block-preformatted {
   -ms-grid-row: 4;
   grid-row: 4;
   padding-top: 2rem;
+  margin-top: -10rem;
 }
 
-@media only screen and (min-width: 482px) {
+@media only screen and (min-width: 592px) {
   .intro--copy2 {
-    margin-top: -10rem;
+    margin-top: 0;
   }
 }
 
