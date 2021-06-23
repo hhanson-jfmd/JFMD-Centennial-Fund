@@ -232,7 +232,7 @@ pre.wp-block-preformatted {
   .wp-block-column {
     .wp-block-group {
       background: var(--global--gradient-dark);
-      padding: 10px;
+      padding: 2rem;
       height: clamp(min-content, 15vw, max-content);
       .wp-block-group__inner-container {
         color: #fff;
@@ -240,6 +240,9 @@ pre.wp-block-preformatted {
           margin: 0;
         }
       }
+    }
+    &:last-child{
+      margin-left:0;
     }
   }
 }
