@@ -338,6 +338,10 @@ pre.wp-block-preformatted {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h3{font-size: 2rem;}
+  }
+  .headings{
+    h2{font-size:4rem;}
   }
 }
 

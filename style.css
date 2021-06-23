@@ -3354,6 +3354,14 @@ pre.wp-block-preformatted {
           justify-content: center;
 }
 
+.focus-areas .wp-block-columns .wp-block-column h3 {
+  font-size: 2rem;
+}
+
+.focus-areas .headings h2 {
+  font-size: 4rem;
+}
+
 .carousel-cell {
   width: 100%;
   display: block;
