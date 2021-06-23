@@ -3111,6 +3111,13 @@ pre.wp-block-preformatted {
   width: max-content;
 }
 
+@media only screen and (min-width: 482px) {
+  .intro--quote .wp-block-group__inner-container {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
 .intro--quote .wp-block-group__inner-container h3 {
   line-height: 1;
   font-weight: 700;
@@ -3162,6 +3169,12 @@ pre.wp-block-preformatted {
   -ms-grid-row: 4;
   grid-row: 4;
   padding-top: 2rem;
+}
+
+@media only screen and (min-width: 482px) {
+  .intro--copy2 {
+    margin-top: -10rem;
+  }
 }
 
 .white-bg {

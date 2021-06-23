@@ -164,6 +164,9 @@ pre.wp-block-preformatted {
     align-self: end;
     width: max-content;
     .wp-block-group__inner-container {
+      @include media(mobile){
+        transform:translateY(-100%);
+      }
       h3 {
         line-height: 1;
         font-weight: 700;
@@ -199,6 +202,9 @@ pre.wp-block-preformatted {
     grid-column: 3 / span 5;
     grid-row: 4;
     padding-top: 2rem;
+    @include media(mobile){
+      margin-top:-10rem;
+    }
   }
 }
 
