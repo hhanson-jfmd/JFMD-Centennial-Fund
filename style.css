@@ -2908,7 +2908,7 @@ pre.wp-block-preformatted {
   height: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2929,7 +2929,7 @@ pre.wp-block-preformatted {
 
 .front-page--splash--centennial-logo .wp-block-group__inner-container figure.wp-block-image.size-large img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .front-page--splash--blue-block {
@@ -3344,7 +3344,6 @@ pre.wp-block-preformatted {
   -ms-grid-row: 1;
   grid-row: 1;
   background: var(--global--gradient-light);
-  padding: 2rem 1rem 2rem 2rem;
 }
 
 .carousel-cell .wp-block-column:first-child h5 {

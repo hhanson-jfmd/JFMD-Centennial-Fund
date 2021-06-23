@@ -34,7 +34,7 @@ pre.wp-block-preformatted {
       .wp-block-group__inner-container {
         display: flex;
         height: 100%;
-        justify-content: end;
+        justify-content: flex-end;
         flex-direction: row;
         margin: 0;
         figure.wp-block-image.size-large {
@@ -47,7 +47,7 @@ pre.wp-block-preformatted {
           }
           img {
             height: 100%;
-            width: 100%;
+            width: auto;
           }
         }
       }
@@ -341,7 +341,7 @@ pre.wp-block-preformatted {
     grid-column: 1 / span 2;
     grid-row: 1;
     background:var(--global--gradient-light);
-    padding:2rem 1rem 2rem 2rem;
+    //padding:2rem 1rem 2rem 2rem;
     h5 {
       font-size: 2rem;
     }
