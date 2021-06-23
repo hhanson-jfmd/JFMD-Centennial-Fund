@@ -339,7 +339,16 @@ pre.wp-block-preformatted {
     flex-direction: column;
     justify-content: center;
     h3{font-size: 2rem;}
+    figure{
+      height:100%;
+      img{
+        height:100%;
+        object-fit: cover;
+        object-position:center;
+      }
+    }
   }
+  h3{line-height: 1;}
   .headings{
     h2{font-size:4rem;}
   }

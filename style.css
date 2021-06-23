@@ -3358,6 +3358,22 @@ pre.wp-block-preformatted {
   font-size: 2rem;
 }
 
+.focus-areas .wp-block-columns .wp-block-column figure {
+  height: 100%;
+}
+
+.focus-areas .wp-block-columns .wp-block-column figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.focus-areas h3 {
+  line-height: 1;
+}
+
 .focus-areas .headings h2 {
   font-size: 4rem;
 }
