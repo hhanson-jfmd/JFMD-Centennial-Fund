@@ -350,7 +350,9 @@ pre.wp-block-preformatted {
   }
   h3{line-height: 1;}
   &--headings{
-    h2{font-size:var(--heading--font-size-h1);}
+    h2{font-size:var(--heading--font-size-h1); 
+      line-height:1;}
+    padding-left:10px;
   }
 }
 

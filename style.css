@@ -3374,8 +3374,13 @@ pre.wp-block-preformatted {
   line-height: 1;
 }
 
+.focus-areas--headings {
+  padding-left: 10px;
+}
+
 .focus-areas--headings h2 {
   font-size: var(--heading--font-size-h1);
+  line-height: 1;
 }
 
 .carousel-cell {
