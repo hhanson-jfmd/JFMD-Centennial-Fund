@@ -3522,14 +3522,14 @@ pre.wp-block-preformatted {
   color: var(--global--color-dark-blue);
 }
 
-.front-page--contact--copy figure.wp-block-image {
+.front-page--contact figure.wp-block-image {
   grid-column: 2/ -1;
   -ms-grid-row: 1;
   grid-row: 1;
   margin: 0;
 }
 
-.front-page--contact--copy figure.wp-block-image img {
+.front-page--contact figure.wp-block-image img {
   max-height: 900px;
   width: auto;
 }
