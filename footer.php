@@ -19,7 +19,13 @@
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-
+		<div class="footer-info alignfull">
+			<img class="footer-info--logo" src="http://brian.jewishdetroit.org/wp-content/uploads/2021/06/centennial-logo.svg">
+			<div class="footer-info--copy">
+				<h2>The Centennial Campaign</h2>
+				<h3>Your Vision. Your Legacy. Your Community.</h3>
+			</div>
+		</div>
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">

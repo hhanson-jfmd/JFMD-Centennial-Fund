@@ -3520,6 +3520,7 @@ pre.wp-block-preformatted {
 .front-page--contact--copy .wp-block-group__inner-container h3 {
   font-size: var(--heading--font-size-h2);
   color: var(--global--color-dark-blue);
+  line-height: 1;
 }
 
 .front-page--contact figure.wp-block-image {
