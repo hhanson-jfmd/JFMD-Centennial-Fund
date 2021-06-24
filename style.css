@@ -3532,6 +3532,8 @@ pre.wp-block-preformatted {
 .front-page--contact figure.wp-block-image img {
   max-height: 900px;
   width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wp-block-pullquote {
