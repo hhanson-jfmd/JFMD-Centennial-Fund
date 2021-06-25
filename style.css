@@ -3346,7 +3346,7 @@ pre.wp-block-preformatted {
 }
 
 @media only screen and (max-width: 481px) {
-  .focus-areas .wp-block-columns {
+  .focus-areas .wp-block-columns:nth-child(even) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;

@@ -337,9 +337,11 @@ pre.wp-block-preformatted {
   background: var(--global--gradient-dark);
   color: #fff;
   .wp-block-columns {
-    @include media(mobile-only) {
-      flex-direction: column-reverse;
-      gap: 2rem;
+    &:nth-child(even) {
+      @include media(mobile-only) {
+        flex-direction: column-reverse;
+        gap: 2rem;
+      }
     }
     .wp-block-column {
       display: flex;
