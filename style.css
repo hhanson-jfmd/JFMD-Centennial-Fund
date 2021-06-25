@@ -3566,6 +3566,14 @@ pre.wp-block-preformatted {
   padding-left: 1rem;
 }
 
+.footer-info--copy h2 {
+  font-size: var(--heading--font-size-h1);
+}
+
+.footer-info--copy h3 {
+  font-size: var(--heading--font-size-h2);
+}
+
 @media only screen and (min-width: 592px) {
   .footer-info--copy {
     padding-left: 2rem;
