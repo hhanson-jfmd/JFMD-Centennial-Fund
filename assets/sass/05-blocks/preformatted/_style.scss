@@ -336,12 +336,12 @@ pre.wp-block-preformatted {
 .focus-areas {
   background: var(--global--gradient-dark);
   color: #fff;
-  .wp-block-columns {
-    &:nth-child(2) {
-      @include media(mobile-only) {
-        flex-direction: column-reverse;
-        gap: 2rem;
-      }
+  &:nth-child(2) {
+    @include media(mobile-only) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+    .wp-block-columns {
     }
     .wp-block-column {
       display: flex;
