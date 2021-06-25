@@ -480,9 +480,11 @@ pre.wp-block-preformatted {
     padding-left: 1rem;
     h2 {
       font-size: var(--heading--font-size-h1);
+      line-height: 0.8;
     }
     h3 {
       font-size: var(--heading--font-size-h2);
+      line-height: 1;
     }
     @include media(tablet) {
       padding-left: 2rem;

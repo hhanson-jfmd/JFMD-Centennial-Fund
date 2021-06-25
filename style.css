@@ -3568,10 +3568,12 @@ pre.wp-block-preformatted {
 
 .footer-info--copy h2 {
   font-size: var(--heading--font-size-h1);
+  line-height: 0.8;
 }
 
 .footer-info--copy h3 {
   font-size: var(--heading--font-size-h2);
+  line-height: 1;
 }
 
 @media only screen and (min-width: 592px) {
