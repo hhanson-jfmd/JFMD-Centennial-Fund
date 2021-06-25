@@ -478,6 +478,12 @@ pre.wp-block-preformatted {
   }
   &--copy {
     padding-left: 1rem;
+    h2 {
+      font-size: var(--heading--font-size-h1);
+    }
+    h3 {
+      font-size: var(--heading--font-size-h2);
+    }
     @include media(tablet) {
       padding-left: 2rem;
     }
