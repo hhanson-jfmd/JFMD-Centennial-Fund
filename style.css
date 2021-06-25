@@ -3345,6 +3345,16 @@ pre.wp-block-preformatted {
   color: #fff;
 }
 
+@media only screen and (max-width: 481px) {
+  .focus-areas .wp-block-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+
 .focus-areas .wp-block-columns .wp-block-column {
   display: -webkit-box;
   display: -ms-flexbox;
