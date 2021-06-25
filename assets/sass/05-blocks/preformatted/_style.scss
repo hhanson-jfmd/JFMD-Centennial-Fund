@@ -468,3 +468,18 @@ pre.wp-block-preformatted {
     }
   }
 }
+.footer-info {
+  display: flex;
+  width: var(--responsive--alignwide-width);
+  margin: auto;
+  align-items: center;
+  &--logo {
+    max-width: 300px;
+  }
+  &--copy {
+    padding-left: 1rem;
+    @include media(tablet) {
+      padding-left: 2rem;
+    }
+  }
+}

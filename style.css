@@ -3547,6 +3547,31 @@ pre.wp-block-preformatted {
      object-fit: cover;
 }
 
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: var(--responsive--alignwide-width);
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-info--logo {
+  max-width: 300px;
+}
+
+.footer-info--copy {
+  padding-left: 1rem;
+}
+
+@media only screen and (min-width: 592px) {
+  .footer-info--copy {
+    padding-left: 2rem;
+  }
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
