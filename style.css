@@ -3517,6 +3517,12 @@ pre.wp-block-preformatted {
   margin-bottom: 2rem;
 }
 
+@media only screen and (min-width: 822px) {
+  .front-page--contact--copy {
+    max-width: 48vw;
+  }
+}
+
 .front-page--contact--copy .wp-block-group__inner-container {
   padding: 2rem;
 }

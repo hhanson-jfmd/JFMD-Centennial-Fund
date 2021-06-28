@@ -438,13 +438,16 @@ pre.wp-block-preformatted {
     align-items: end;
   }
   &--copy {
-    background: var(--global--gradient-light);
+    //background: var(--global--gradient-light);
     color: var(--global--color-dark-blue);
     grid-column: 1 / span 2;
     z-index: 2;
     grid-row: 1;
     height: max-content;
     margin-bottom: 2rem;
+    @include media(desktop){
+      max-width:48vw;28
+    }
     .wp-block-group__inner-container {
       padding: 2rem;
       @include media(desktop) {
