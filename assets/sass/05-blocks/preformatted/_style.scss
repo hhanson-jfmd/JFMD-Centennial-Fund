@@ -211,7 +211,11 @@ pre.wp-block-preformatted {
 }
 
 .white-bg {
-  background-color: rgba(255, 255, 255, 0.6);
+  background: linear-gradient(
+    175deg, 
+    rgba(238,250,251,.8) 28%, 
+    rgba(236,238,250,.8) 100%
+  );
   height: min-content;
   .wp-block-group__inner-container {
     padding: 15px;
