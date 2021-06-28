@@ -3206,6 +3206,15 @@ pre.wp-block-preformatted {
   width: 100%;
 }
 
+@media only screen and (max-width: 481px) {
+  .flip {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 @media only screen and (min-width: 592px) {
   .vehicles-for-giving .wp-block-column {
     display: -ms-grid;

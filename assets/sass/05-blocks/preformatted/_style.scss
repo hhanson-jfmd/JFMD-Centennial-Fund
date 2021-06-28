@@ -230,7 +230,11 @@ pre.wp-block-preformatted {
     }
   }
 }
-
+.flip{
+  @include media(mobile-only){
+    flex-direction:column-reverse;
+  }
+}
 .vehicles-for-giving {
   .wp-block-column {
     @include media(tablet){
