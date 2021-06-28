@@ -336,7 +336,7 @@ pre.wp-block-preformatted {
 .focus-areas {
   background: var(--global--gradient-dark);
   color: #fff;
-  &:nth-child(2) {
+  &:nth-child(even) {
     @include media(mobile-only) {
       flex-direction: column-reverse;
       gap: 2rem;
@@ -430,7 +430,7 @@ pre.wp-block-preformatted {
 
 .front-page--contact {
   display: block;
-  @include media(tablet) {
+  @include media(desktop) {
     display: grid;
     grid-template-columns: var(--responsive--alignright-margin) 5fr 3fr var(
         --responsive--alignleft-margin
@@ -447,7 +447,7 @@ pre.wp-block-preformatted {
     margin-bottom: 2rem;
     .wp-block-group__inner-container {
       padding: 2rem;
-      @include media(tablet) {
+      @include media(desktop) {
         padding: 4rem 2rem 4rem var(--responsive--alignright-margin);
       }
       h3 {
