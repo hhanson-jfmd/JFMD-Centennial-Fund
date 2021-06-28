@@ -183,10 +183,10 @@ pre.wp-block-preformatted {
     margin: 0;
     height: 100%;
     width: 100%;
-    max-height: 900px;
+    max-height: 720px;
     img {
       object-fit: cover;
-      object-position: center left;
+      object-position: 50% 20%;
       height: 100%;
     }
   }
