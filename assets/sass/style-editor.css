@@ -117,10 +117,10 @@
     rgba(206, 234, 237, 1) 0%,
     rgba(206, 211, 233, 1) 100%
   );
-  --global--gradient-light-transparent: linear-gradient(
-    135deg,
-    rgba(206, 234, 237, .9) 0%,
-    rgba(39, 55, 124, 0.5) 100%
+  --global--gradient-light-transparent:linear-gradient(
+    175deg, 
+    rgba(238,250,251,.8) 28%, 
+    rgba(236,238,250,.8) 100%
   );
   --global--gradient-dark: linear-gradient(
     135deg,
