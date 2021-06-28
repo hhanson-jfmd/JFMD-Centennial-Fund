@@ -55,7 +55,7 @@ pre.wp-block-preformatted {
     &--blue-block {
       grid-column: 3 / span 2;
       grid-row: 1;
-      margin: 1rem 0;
+      margin: 1rem 0 0 0;
       height: 100%;
       width: auto;
       figure img {
@@ -229,6 +229,10 @@ pre.wp-block-preformatted {
 
 .vehicles-for-giving {
   .wp-block-column {
+    @include media(tablet){
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
     .wp-block-group {
       background: var(--global--gradient-dark);
       padding: 2rem;
@@ -446,7 +450,7 @@ pre.wp-block-preformatted {
     height: max-content;
     margin-bottom: 2rem;
     @include media(desktop){
-      max-width:48vw;28
+      max-width:48vw;
     }
     .wp-block-group__inner-container {
       padding: 2rem;
