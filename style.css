@@ -208,6 +208,11 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     rgba(206, 234, 237, 1) 0%,
     rgba(206, 211, 233, 1) 100%
   );
+  --global--gradient-light-transparent: linear-gradient(
+    135deg,
+    rgba(206, 234, 237, .9) 0%,
+    rgba(39, 55, 124, 0.5) 100%
+  );
   --global--gradient-dark: linear-gradient(
     135deg,
     rgba(134, 202, 211, 1) 0%,
@@ -3512,6 +3517,7 @@ pre.wp-block-preformatted {
 }
 
 .front-page--contact--copy {
+  background: var(--global--gradient-light-transparent);
   color: var(--global--color-dark-blue);
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;

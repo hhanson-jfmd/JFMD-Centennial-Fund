@@ -442,7 +442,7 @@ pre.wp-block-preformatted {
     align-items: end;
   }
   &--copy {
-    //background: var(--global--gradient-light);
+    background: var(--global--gradient-light-transparent);
     color: var(--global--color-dark-blue);
     grid-column: 1 / span 2;
     z-index: 2;
