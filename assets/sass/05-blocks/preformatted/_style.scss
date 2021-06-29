@@ -1,3 +1,74 @@
+//UTILITES
+.offset-quote {
+  @include media(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+  }
+  figure {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    @include media(tablet) {
+      transform: translatey(4vw);
+    }
+  }
+  .wp-block-group {
+    grid-column: 2/-1;
+    grid-row: 1;
+    z-index: 2;
+    .wp-block-group__inner-container {
+      h2 {
+        line-height: 1;
+      }
+    }
+  }
+}
+.white-bg {
+  background: linear-gradient(
+    175deg, 
+    rgba(238,250,251,.8) 28%, 
+    rgba(236,238,250,.8) 100%
+  );
+  height: min-content;
+  .wp-block-group__inner-container {
+    //padding: 15px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      width: 100%;
+    }
+  }
+}
+.wp-block-columns.flip{
+  flex-direction:column-reverse;
+  @include media(tablet){
+    flex-direction:row;
+  }
+}
+.arrow-link{
+
+  &:after{
+    height: 20px;
+    background-image: url('http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png');
+    background-size: 26px 20px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    margin: 0 0 0 10px;
+    transition: .5s ease-in-out;
+  } 
+  &:hover:after, &:focus:after{
+    transform:translateX(15px);
+  }
+}
+
+
+//FRONT PAGE STUFF
 pre.wp-block-preformatted {
   overflow-x: auto;
   white-space: pre;
@@ -461,71 +532,3 @@ pre.wp-block-preformatted {
 }
 
 
-//UTILITES
-.offset-quote {
-  @include media(tablet) {
-    display: grid;
-    grid-template-columns: 1fr 250px 1fr;
-  }
-  figure {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    @include media(tablet) {
-      transform: translatey(4vw);
-    }
-  }
-  .wp-block-group {
-    grid-column: 2/-1;
-    grid-row: 1;
-    z-index: 2;
-    .wp-block-group__inner-container {
-      h2 {
-        line-height: 1;
-      }
-    }
-  }
-}
-.white-bg {
-  background: linear-gradient(
-    175deg, 
-    rgba(238,250,251,.8) 28%, 
-    rgba(236,238,250,.8) 100%
-  );
-  height: min-content;
-  .wp-block-group__inner-container {
-    //padding: 15px;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-      width: 100%;
-    }
-  }
-}
-.wp-block-columns.flip{
-  flex-direction:column-reverse;
-  @include media(tablet){
-    flex-direction:row;
-  }
-}
-.arrow-link{
-
-  &:after{
-    height: 20px;
-    background-image: url('http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png');
-    background-size: 26px 20px;
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    content: "";
-    background-repeat: no-repeat;
-    margin: 0 0 0 10px;
-    transition: .5s ease-in-out;
-  } 
-  &:hover:after, &:focus:after{
-    transform:translateX(15px);
-  }
-}
