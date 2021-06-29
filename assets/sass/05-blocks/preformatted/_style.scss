@@ -63,8 +63,8 @@
     transition: .5s ease-in-out;
   } 
   &:hover:after, &:focus:after{
-    transform:translateX(15px);
-  }
+    transform:translateX(10px);
+  
 }
 
 
@@ -98,6 +98,7 @@ pre.wp-block-preformatted {
       grid-column: 1 / -1;
       grid-row: 1;
       margin: 0;
+      z-index:2;
       @include media(tablet) {
         grid-column: 5 / span 6;
       }
@@ -113,9 +114,6 @@ pre.wp-block-preformatted {
           height: clamp(8rem, 40vw, 20rem);
           width: auto;
           padding-left: 0.5rem;
-          &.logo {
-            z-index: 2;
-          }
           img {
             height: 100%;
             width: auto;
@@ -438,6 +436,7 @@ pre.wp-block-preformatted {
       align-items: center;
       padding-left: 2rem;
       padding-right: 1rem;
+      padding:2rem 2rem 1rem 2rem;
       @include media(desktop) {
         margin-right: 100px;
       }
@@ -529,6 +528,7 @@ pre.wp-block-preformatted {
       padding-left: 2rem;
     }
   }
+}
 }
 
 
