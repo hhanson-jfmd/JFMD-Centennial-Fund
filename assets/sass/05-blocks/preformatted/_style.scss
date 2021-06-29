@@ -49,7 +49,6 @@
   }
 }
 .arrow-link{
-
   &:after{
     height: 20px;
     background-image: url('http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png');
@@ -64,9 +63,8 @@
   } 
   &:hover:after, &:focus:after{
     transform:translateX(10px);
-  
+  }
 }
-
 
 //FRONT PAGE STUFF
 pre.wp-block-preformatted {
@@ -114,6 +112,9 @@ pre.wp-block-preformatted {
           height: clamp(8rem, 40vw, 20rem);
           width: auto;
           padding-left: 0.5rem;
+          &.logo {
+            z-index: 2;
+          }
           img {
             height: 100%;
             width: auto;
@@ -462,7 +463,29 @@ pre.wp-block-preformatted {
     }
   }
 }
-
+.footer-info {
+  display: flex;
+  width: var(--responsive--alignwide-width);
+  margin: auto;
+  align-items: center;
+  &--logo {
+    max-width: 300px;
+  }
+  &--copy {
+    padding-left: 1rem;
+    h2 {
+      font-size: var(--heading--font-size-h1);
+      line-height: 0.8;
+    }
+    h3 {
+      font-size: var(--heading--font-size-h2);
+      line-height: 1;
+    }
+    @include media(tablet) {
+      padding-left: 2rem;
+    }
+  }
+}
 .front-page--contact {
   display: block;
   @include media(desktop) {
@@ -506,29 +529,6 @@ pre.wp-block-preformatted {
     }
   }
 }
-.footer-info {
-  display: flex;
-  width: var(--responsive--alignwide-width);
-  margin: auto;
-  align-items: center;
-  &--logo {
-    max-width: 300px;
-  }
-  &--copy {
-    padding-left: 1rem;
-    h2 {
-      font-size: var(--heading--font-size-h1);
-      line-height: 0.8;
-    }
-    h3 {
-      font-size: var(--heading--font-size-h2);
-      line-height: 1;
-    }
-    @include media(tablet) {
-      padding-left: 2rem;
-    }
-  }
-}
-}
+
 
 
