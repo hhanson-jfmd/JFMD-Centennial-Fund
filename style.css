@@ -2894,6 +2894,10 @@ p.has-text-color a {
   height: min-content;
 }
 
+.white-bg .wp-block-group__inner-container {
+  padding: 15px;
+}
+
 .white-bg .wp-block-group__inner-container h1,
 .white-bg .wp-block-group__inner-container h2,
 .white-bg .wp-block-group__inner-container h3,
