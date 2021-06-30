@@ -3671,6 +3671,8 @@ pre.wp-block-preformatted {
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
+  background: var(--global--gradient-dark);
+  color: #fff;
 }
 
 .entry-content #staff .wp-block-columns {
