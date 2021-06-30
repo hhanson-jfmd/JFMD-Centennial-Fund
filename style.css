@@ -3667,13 +3667,13 @@ pre.wp-block-preformatted {
   border-bottom: none;
 }
 
-.entry-content .staff {
+.entry-content #staff {
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
 
-.entry-content .staff .wp-block-columns {
+.entry-content #staff .wp-block-columns {
   max-width: var(--responsive--aligndefault-width);
   margin-left: auto;
   margin-right: auto;
