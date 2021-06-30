@@ -24,9 +24,9 @@
 }
 .white-bg {
   background: linear-gradient(
-    175deg, 
-    rgba(238,250,251,.8) 28%, 
-    rgba(236,238,250,.8) 100%
+    175deg,
+    rgba(238, 250, 251, 0.8) 28%,
+    rgba(236, 238, 250, 0.8) 100%
   );
   height: min-content;
   .wp-block-group__inner-container {
@@ -42,16 +42,16 @@
     }
   }
 }
-.wp-block-columns.flip{
-  flex-direction:column-reverse;
-  @include media(tablet){
-    flex-direction:row;
+.wp-block-columns.flip {
+  flex-direction: column-reverse;
+  @include media(tablet) {
+    flex-direction: row;
   }
 }
-.arrow-link{
-  &:after{
+.arrow-link {
+  &:after {
     height: 20px;
-    background-image: url('http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png');
+    background-image: url("http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png");
     background-size: 26px 20px;
     display: inline-block;
     width: 30px;
@@ -59,10 +59,11 @@
     content: "";
     background-repeat: no-repeat;
     margin: 0 0 0 10px;
-    transition: .5s ease-in-out;
-  } 
-  &:hover:after, &:focus:after{
-    transform:translateX(10px);
+    transition: 0.5s ease-in-out;
+  }
+  &:hover:after,
+  &:focus:after {
+    transform: translateX(10px);
   }
 }
 
@@ -96,7 +97,7 @@ pre.wp-block-preformatted {
       grid-column: 1 / -1;
       grid-row: 1;
       margin: 0;
-      z-index:2;
+      z-index: 2;
       @include media(tablet) {
         grid-column: 5 / span 6;
       }
@@ -282,7 +283,7 @@ pre.wp-block-preformatted {
 
 .vehicles-for-giving {
   .wp-block-column {
-    @include media(tablet){
+    @include media(tablet) {
       display: grid;
       grid-template-rows: 1fr 1fr;
     }
@@ -367,7 +368,6 @@ pre.wp-block-preformatted {
   }
 }
 
-
 .focus-areas {
   background: var(--global--gradient-dark);
   color: #fff;
@@ -437,7 +437,7 @@ pre.wp-block-preformatted {
       align-items: center;
       padding-left: 2rem;
       padding-right: 1rem;
-      padding:2rem 2rem 1rem 2rem;
+      padding: 2rem 2rem 1rem 2rem;
       @include media(desktop) {
         margin-right: 100px;
       }
@@ -503,8 +503,8 @@ pre.wp-block-preformatted {
     grid-row: 1;
     height: max-content;
     margin-bottom: 2rem;
-    @include media(desktop){
-      max-width:48vw;
+    @include media(desktop) {
+      max-width: 48vw;
     }
     .wp-block-group__inner-container {
       padding: 2rem;
@@ -530,5 +530,23 @@ pre.wp-block-preformatted {
   }
 }
 
+//REGULAR PAGE STUFF
 
-
+//Blue block next to page titles
+.singular .entry-title {
+  font-size: var(--global--font-size-page-title);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: var(--responsive--aligndefault-width);
+  margin: auto;
+  padding-left: 10px;
+  &:before {
+    content: "";
+    background: var(--global--gradient-dark);
+    display: inline-block;
+    margin-right: 1rem;
+    width: 30%;
+    padding-top: 30%;
+  }
+}
