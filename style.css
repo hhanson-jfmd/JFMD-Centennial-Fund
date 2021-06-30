@@ -3662,7 +3662,7 @@ pre.wp-block-preformatted {
   padding-top: 30%;
 }
 
-.site-main .singular .entry-header {
+.singular .entry-header {
   padding-top: 2rem;
   border-bottom: none;
   padding-bottom: 0;
@@ -3674,7 +3674,7 @@ pre.wp-block-preformatted {
   margin-right: 0;
   background: var(--global--gradient-dark);
   color: #fff;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 .entry-content #staff .wp-block-columns {
