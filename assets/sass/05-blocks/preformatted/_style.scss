@@ -550,3 +550,19 @@ pre.wp-block-preformatted {
     padding-top: 30%;
   }
 }
+.entry-header{
+  padding-top:2rem;
+  border-bottom: none;
+}
+
+//dark gradient for staff page
+.entry-content .staff{
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  .wp-block-columns{
+    max-width: var(--responsive--aligndefault-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

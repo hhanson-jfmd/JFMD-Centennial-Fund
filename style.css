@@ -3662,6 +3662,23 @@ pre.wp-block-preformatted {
   padding-top: 30%;
 }
 
+.entry-header {
+  padding-top: 2rem;
+  border-bottom: none;
+}
+
+.entry-content .staff {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.entry-content .staff .wp-block-columns {
+  max-width: var(--responsive--aligndefault-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
