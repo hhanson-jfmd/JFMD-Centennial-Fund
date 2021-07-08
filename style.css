@@ -3674,13 +3674,35 @@ pre.wp-block-preformatted {
   margin-right: 0;
   background: var(--global--gradient-dark);
   color: #fff;
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 
 .entry-content #staff .wp-block-columns {
   max-width: var(--responsive--aligndefault-width);
   margin-left: auto;
   margin-right: auto;
+}
+
+.staff-block .wp-block-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.staff-block .wp-block-column h4 {
+  font-size: var(--heading--font-size-h3);
+}
+
+.staff-block .wp-block-column ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .wp-block-pullquote {
