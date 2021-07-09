@@ -594,6 +594,7 @@ pre.wp-block-preformatted {
   padding-top:2rem;
   margin-top:2rem;
   &--list{
+    padding:0 var(--global--spacing-horizontal);
     .wp-block-group__inner-container{
       column-count:1;
       @include media(tablet){
