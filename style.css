@@ -2943,6 +2943,20 @@ p.has-text-color a {
           transform: translateX(10px);
 }
 
+a[href$=".pdf"]:after {
+  height: 20px;
+  background-image: url("http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png");
+  background-size: 26px 20px;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  content: "";
+  background-repeat: no-repeat;
+  margin: 0 0 0 10px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 pre.wp-block-preformatted {
   overflow-x: auto;
   white-space: pre;
@@ -3740,7 +3754,7 @@ pre.wp-block-preformatted {
   padding-left: 0;
 }
 
-.donors--list .wp-block-group__inner-container ul li {
+.donors--list .wp-block-group__inner-container ul li a {
   color: #fff;
 }
 
