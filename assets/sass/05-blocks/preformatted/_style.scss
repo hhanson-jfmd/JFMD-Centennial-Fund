@@ -67,6 +67,19 @@
   }
 }
 
+a[href$=".pdf"]:after{
+  height: 20px;
+  background-image: url("http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png");
+  background-size: 26px 20px;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  content: "";
+  background-repeat: no-repeat;
+  margin: 0 0 0 10px;
+  transition: 0.5s ease-in-out;
+}
+
 //FRONT PAGE STUFF
 pre.wp-block-preformatted {
   overflow-x: auto;
@@ -606,8 +619,9 @@ pre.wp-block-preformatted {
       ul{
         list-style:none;
         padding-left:0;
-        li{color:#fff;}
+        li a{color:#fff;}
       }
     }
   }
 }
+
