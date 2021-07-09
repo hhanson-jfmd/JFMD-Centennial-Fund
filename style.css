@@ -3712,6 +3712,10 @@ pre.wp-block-preformatted {
   margin-top: 2rem;
 }
 
+.donors--list {
+  padding: 0 var(--global--spacing-horizontal);
+}
+
 .donors--list .wp-block-group__inner-container {
   -webkit-column-count: 1;
           column-count: 1;
