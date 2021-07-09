@@ -586,3 +586,27 @@ pre.wp-block-preformatted {
     }
   }
 }
+
+//Donors List
+.donors{
+  background:var(--global--gradient-dark);
+  color:#fff;
+  padding-top:2rem;
+  margin-top:2rem;
+  &--list{
+    .wp-block-group__inner-container{
+      column-count:1;
+      @include media(tablet){
+        column-count:2;
+      }
+      @include media(desktop){
+        column-count:3;
+      }
+      ul{
+        list-style:none;
+        padding-left:0;
+        li{color:#fff;}
+      }
+    }
+  }
+}

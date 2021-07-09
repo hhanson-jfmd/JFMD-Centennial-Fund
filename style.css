@@ -3705,6 +3705,41 @@ pre.wp-block-preformatted {
   padding-left: 0;
 }
 
+.donors {
+  background: var(--global--gradient-dark);
+  color: #fff;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.donors--list .wp-block-group__inner-container {
+  -webkit-column-count: 1;
+          column-count: 1;
+}
+
+@media only screen and (min-width: 592px) {
+  .donors--list .wp-block-group__inner-container {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 822px) {
+  .donors--list .wp-block-group__inner-container {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+.donors--list .wp-block-group__inner-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.donors--list .wp-block-group__inner-container ul li {
+  color: #fff;
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
