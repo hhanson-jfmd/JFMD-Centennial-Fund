@@ -3563,7 +3563,13 @@ pre.wp-block-preformatted {
 }
 
 .footer-info--logo {
-  max-width: 300px;
+  max-width: 150px;
+}
+
+@media only screen and (min-width: 592px) {
+  .footer-info--logo {
+    max-width: 300px;
+  }
 }
 
 .footer-info--copy {
@@ -3728,6 +3734,7 @@ pre.wp-block-preformatted {
 
 .donors--list {
   padding: 0 var(--global--spacing-horizontal);
+  max-width: var(--responsive--aligndefault-width);
 }
 
 .donors--list .wp-block-group__inner-container {

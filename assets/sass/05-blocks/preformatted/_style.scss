@@ -67,7 +67,7 @@
   }
 }
 
-a[href$=".pdf"]:after{
+a[href$=".pdf"]:after {
   height: 20px;
   background-image: url("http://brian.jewishdetroit.org/wp-content/uploads/2021/06/angle-double-right-sm-1.png");
   background-size: 26px 20px;
@@ -482,7 +482,10 @@ pre.wp-block-preformatted {
   margin: auto;
   align-items: center;
   &--logo {
-    max-width: 300px;
+    @include media(tablet) {
+      max-width: 300px;
+    }
+    max-width: 150px;
   }
   &--copy {
     padding-left: 1rem;
@@ -601,27 +604,29 @@ pre.wp-block-preformatted {
 }
 
 //Donors List
-.donors{
-  background:var(--global--gradient-dark);
-  color:#fff;
-  padding-top:2rem;
-  margin-top:2rem;
-  &--list{
-    padding:0 var(--global--spacing-horizontal);
-    .wp-block-group__inner-container{
-      column-count:1;
-      @include media(tablet){
-        column-count:2;
+.donors {
+  background: var(--global--gradient-dark);
+  color: #fff;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  &--list {
+    padding: 0 var(--global--spacing-horizontal);
+    max-width: var(--responsive--aligndefault-width);
+    .wp-block-group__inner-container {
+      column-count: 1;
+      @include media(tablet) {
+        column-count: 2;
       }
-      @include media(desktop){
-        column-count:3;
+      @include media(desktop) {
+        column-count: 3;
       }
-      ul{
-        list-style:none;
-        padding-left:0;
-        li a{color:#fff;}
+      ul {
+        list-style: none;
+        padding-left: 0;
+        li a {
+          color: #fff;
+        }
       }
     }
   }
 }
-
