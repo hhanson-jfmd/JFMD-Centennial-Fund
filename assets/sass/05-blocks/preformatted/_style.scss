@@ -612,7 +612,7 @@ pre.wp-block-preformatted {
   &--list {
     padding: 0 var(--global--spacing-horizontal);
     max-width: var(--responsive--aligndefault-width);
-    .wp-block-group__inner-container {
+    .wp-block-group__inner-container ul {
       column-count: 1;
       @include media(tablet) {
         column-count: 2;
@@ -620,12 +620,11 @@ pre.wp-block-preformatted {
       @include media(desktop) {
         column-count: 3;
       }
-      ul {
-        list-style: none;
-        padding-left: 0;
-        li a {
-          color: #fff;
-        }
+
+      list-style: none;
+      padding-left: 0;
+      li a {
+        color: #fff;
       }
     }
   }

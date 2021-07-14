@@ -3737,28 +3737,25 @@ pre.wp-block-preformatted {
   max-width: var(--responsive--aligndefault-width);
 }
 
-.donors--list .wp-block-group__inner-container {
+.donors--list .wp-block-group__inner-container ul {
   -webkit-column-count: 1;
           column-count: 1;
+  list-style: none;
+  padding-left: 0;
 }
 
 @media only screen and (min-width: 592px) {
-  .donors--list .wp-block-group__inner-container {
+  .donors--list .wp-block-group__inner-container ul {
     -webkit-column-count: 2;
             column-count: 2;
   }
 }
 
 @media only screen and (min-width: 822px) {
-  .donors--list .wp-block-group__inner-container {
+  .donors--list .wp-block-group__inner-container ul {
     -webkit-column-count: 3;
             column-count: 3;
   }
-}
-
-.donors--list .wp-block-group__inner-container ul {
-  list-style: none;
-  padding-left: 0;
 }
 
 .donors--list .wp-block-group__inner-container ul li a {
