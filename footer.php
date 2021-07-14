@@ -40,7 +40,9 @@
 						<?php endif; ?>
 					<?php endif; ?>
 				<?php endif; ?>
-				<?php if ( has_nav_menu( 'footer' ) ) : ?>
+				
+			</div><!-- .site-name -->
+			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">
 					<?php
@@ -59,8 +61,6 @@
 				</ul><!-- .footer-navigation-wrapper -->
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
-			</div><!-- .site-name -->
-			
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
