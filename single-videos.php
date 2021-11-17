@@ -17,6 +17,14 @@ while ( have_posts() ) :
 	the_post();
 
 ?>
+<?php
+/*
+ * Set the post format of a post (in the loop).
+ */
+ 
+set_post_format($post->ID, 'video' ); //sets the given post to the 'gallery' format
+ 
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="video entry-header">
