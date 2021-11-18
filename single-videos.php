@@ -1,14 +1,15 @@
 <?php
 /**
- * Template Name Posts: Video Story (Single Post)
+ * Template Name: Video Story (Single Post)
+ * Template Post Type: post, page
  * The template for displaying all single posts
- *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */
+
 
 get_header();
 
@@ -17,18 +18,11 @@ while ( have_posts() ) :
 	the_post();
 
 ?>
-<?php
-/*
- * Set the post format of a post (in the loop).
- */
- 
-set_post_format($post->ID, 'video' ); //sets the given post to the 'gallery' format
- 
-?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="video entry-header">
-        <div><iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="75 Years of Women&amp;#039;s Philanthropy"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="75 Years of Women&amp;#039;s Philanthropy"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         <?php the_content(); ?>
 		
 	</header><!-- .entry-header -->
