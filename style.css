@@ -5207,6 +5207,11 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
   margin-bottom: calc(0.5 * var(--global--spacing-vertical));
 }
 
+.video-container {
+  max-width: var(--responsive--aligndefault-width);
+  margin: auto;
+}
+
 .page-title {
   font-size: var(--global--font-size-page-title);
 }

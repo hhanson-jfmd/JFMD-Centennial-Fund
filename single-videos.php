@@ -23,14 +23,10 @@ while ( have_posts() ) :
 
 	<header class="video entry-header">
         <h1 class="entry-title">Centennial Stories</h1>
-        <div style="padding:56.25% 0 0 0;position:relative; max-width:600px;"><iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="75 Years of Women&amp;#039;s Philanthropy"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="video-container"><iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="75 Years of Women&amp;#039;s Philanthropy"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         <?php the_content(); ?>
 		
 	</header><!-- .entry-header -->
-
-	<footer class="entry-footer default-max-width">
-		<?php twenty_twenty_one_entry_meta_footer(); ?>
-	</footer><!-- .entry-footer -->
 
 	<?php if ( ! is_singular( 'attachment' ) ) : ?>
 		<?php get_template_part( 'template-parts/post/author-bio' ); ?>
