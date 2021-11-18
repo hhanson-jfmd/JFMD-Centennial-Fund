@@ -5210,6 +5210,7 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 .video-container {
   max-width: var(--responsive--aligndefault-width);
   margin: auto;
+  position: relative;
 }
 
 .page-title {
