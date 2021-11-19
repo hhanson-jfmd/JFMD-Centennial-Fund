@@ -2,6 +2,7 @@
 /**
  * Template Name Posts: Video Story (Single Post)
  * Template Post Type: post, page
+ * Template Post Format: video
  * The template for displaying all single posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
