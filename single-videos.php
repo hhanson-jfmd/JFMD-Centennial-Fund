@@ -22,26 +22,15 @@ while ( have_posts() ) :
 		<?php // - Default Thumbnail call twenty_twenty_one_post_thumbnail(); ?>
 		<h1 class="entry-title">Centennial Stories</h1>
 		<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        <?php echo get_the_category_list(); ?>
         <?php the_title( '<h3 class="">', '</h3>' ); ?>
-		<h4 class="entry-excerpt"><?php the_excerpt(); ?></h4>
-		<h5 class="entry-author">By <?php the_author(); ?></h5>
-        <h5 class="entry-date"><?php echo get_the_date(); ?></h5>
-		
-	</header><!-- .entry-header -->
+		<!-- .entry-header -->
 	<div class="video entry-content">
 		<?php
 		the_content();
-		wp_link_pages(
-			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
-				'after'    => '</nav>',
-				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
-			)
-		);
 		?>
 	</div><!-- .entry-content -->
+		
+	</header>
 	<footer class="entry-footer default-max-width">
 		<?php twenty_twenty_one_entry_meta_footer(); ?>
 	</footer><!-- .entry-footer -->
