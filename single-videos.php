@@ -22,9 +22,10 @@ while ( have_posts() ) :
 		<?php // - Default Thumbnail call twenty_twenty_one_post_thumbnail(); ?>
 		<h1 class="entry-title">Centennial Stories</h1>
 		<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        <?php the_title( '<h3 class="">', '</h3>' ); ?>
+        
 		<!-- .entry-header -->
 	<div class="video entry-content">
+		<?php the_title( '<h3 class="">', '</h3>' ); ?>
 		<?php
 		the_content();
 		?>

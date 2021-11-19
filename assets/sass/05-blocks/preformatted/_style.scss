@@ -550,7 +550,8 @@ pre.wp-block-preformatted {
 
 //Blue block next to page titles
 .singular .entry-title {
-  font-size: var(--global--font-size-page-title);
+  //font-size: var(--global--font-size-page-title);
+  font-size: 4rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -562,8 +563,8 @@ pre.wp-block-preformatted {
     background: var(--global--gradient-dark);
     display: inline-block;
     margin-right: 1rem;
-    width: 30%;
-    padding-top: 30%;
+    width: 20%;
+    padding-top: 20%;
   }
 }
 .site-main .entry .entry-header {
