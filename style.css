@@ -3762,20 +3762,11 @@ pre.wp-block-preformatted {
   color: #fff;
 }
 
-/* header.video.entry-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  .video.entry-content {
-    grid-row: 3;
-    z-index: 2;
-  }
-  .gradient-background-filler {
-    background: var(--global--gradient-dark);
-    grid-row: 2/-1;
-    z-index: -2;
-  }
-} */
+header.video.entry-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(50%, white), color-stop(50%, #86cad3), to(#8591c7));
+  background: linear-gradient(180deg, white 0%, white 50%, #86cad3 50%, #8591c7 100%);
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
