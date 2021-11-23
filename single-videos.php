@@ -24,8 +24,9 @@ while ( have_posts() ) :
 		<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         
 		<!-- .entry-header -->
+        <div class="gradient-background-filler"></div>
 	<div class="video entry-content">
-		<?php the_title( '<h2 class="">', '</h2>' ); ?>
+		<?php the_title( '<h2 class="entry-content--title">', '</h2>' ); ?>
 		<?php
 		the_content();
 		?>
