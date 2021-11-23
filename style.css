@@ -3762,27 +3762,20 @@ pre.wp-block-preformatted {
   color: #fff;
 }
 
-header.video.entry-header {
-  display: -ms-grid;
+/* header.video.entry-header {
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-}
-
-header.video.entry-header .video.entry-content {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  z-index: 2;
-}
-
-header.video.entry-header .gradient-background-filler {
-  background: var(--global--gradient-dark);
-  grid-row: 2/-1;
-  z-index: -2;
-}
-
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  .video.entry-content {
+    grid-row: 3;
+    z-index: 2;
+  }
+  .gradient-background-filler {
+    background: var(--global--gradient-dark);
+    grid-row: 2/-1;
+    z-index: -2;
+  }
+} */
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
