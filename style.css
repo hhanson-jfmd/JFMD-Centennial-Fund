@@ -3767,6 +3767,11 @@ article.post_format-post-format-video {
   background: linear-gradient(180deg, white 0%, white 50%, #86cad3 50%, #8591c7 100%);
 }
 
+article.post_format-post-format-video h2,
+article.post_format-post-format-video p {
+  color: #fff;
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
