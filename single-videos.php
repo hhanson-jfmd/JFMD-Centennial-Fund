@@ -55,7 +55,7 @@ endwhile; // End of the loop.
                     'tag__in' => $tag_ids,
                     'post__not_in' => array($post->ID),
                     'posts_per_page'=>3, // Number of related posts to display.
-                    'caller_get_posts'=>1
+                    //'caller_get_posts'=>1
                 );
            
             $my_query = new wp_query( $args );
