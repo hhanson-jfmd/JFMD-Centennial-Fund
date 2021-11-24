@@ -25,7 +25,7 @@ while ( have_posts() ) :
         
 		<!-- .entry-header -->
         <div class="gradient-background-filler"></div>
-	<div class="video entry-content">
+	<div class="video entry-content pb2">
 		<?php the_title( '<h2 class="entry-content--title">', '</h2>' ); ?>
 		<?php
 		the_content();
