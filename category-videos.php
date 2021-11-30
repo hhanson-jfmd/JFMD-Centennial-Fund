@@ -55,8 +55,8 @@ get_header(); ?>
 	<?php
 		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 		$args = array(
-   			'post_type'  	=> 'videos', 
-			'category_name'  => 'video',
+   			'post_type'  	=> 'posts', //videos
+			'category_name'  => 'videos', //video
 			'order'			=> 'DESC',
 			'orderby'		=> 'date', 
 			'posts_per_page'=> 21,
