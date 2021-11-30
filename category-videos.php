@@ -9,7 +9,7 @@ get_header(); ?>
 <section class="">
 	<?php
 		$args = array(
-			'post_type'  	=> 'video', 
+			'post_type'  	=> 'videos', 
 			'order'			=> 'ASC',
 			'orderby'		=> 'rand',									
 			'posts_per_page'=> 1,
@@ -55,7 +55,7 @@ get_header(); ?>
 	<?php
 		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 		$args = array(
-   			'post_type'  	=> 'video', 
+   			'post_type'  	=> 'videos', 
 			'category_name'  => 'video',
 			'order'			=> 'DESC',
 			'orderby'		=> 'date', 
@@ -87,35 +87,5 @@ get_header(); ?>
 		<p class="purple border-bottom pb-1" style="max-width:500px;">Hear local experts share their insights into this epidemic and what we all should know about youth mental health. </p>
 	</div>
 </div>
-<!-- THE LØØP -->
-		<div class="grid-x grid-padding-x grid-margin-x pl-2 pr-2 contained">
-		<?php
-		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-		$args = array(
-   			'post_type'  	=> 'video', 
-			'category_name'  => 'professional',
-			'order'			=> 'DESC',
-			'orderby'		=> 'date', 
-			'posts_per_page'=> 12,
-       		'paged' => $paged
-		);		
-		$main_posts = new WP_Query( $args );
-		$count = 0;
-		if( $main_posts->have_posts() ):
-			while( $main_posts->have_posts() ) : $main_posts->the_post(); ?>
-				<div class="cell small-12 medium-4">
-					<a href="<?php the_permalink(); ?>" class="video-thumb"><?php the_post_thumbnail('full'); ?></a>
-					<div class="border-purple mt-1 pl-1">
-						<h4><a class="purple-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-						
-					</div>
-				</div>
-			<?php endwhile; ?>			
-		<?php endif;  ?>
-		<?php wp_reset_query();?>				
-	</div>
-	
-		<!--<?php echo do_shortcode('[ajax_load_more id="Personal" container_type="div" css_classes="grid-x grid-padding-x grid-margin-x pl-2 pr-2" post_type="video" posts_per_page="3" category="professional" pause="true" scroll="false" transition_container="false" images_loaded="true" offset="3" button_label="Load More Videos"]') ?>-->	
-
 </div>	
 <?php get_footer(); ?>
